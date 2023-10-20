@@ -1,0 +1,10 @@
+{
+  "get_tax_component": {
+    "title": "resources/tax_components/Get Tax Component",
+    "href": "/resources/tax_components/get_tax_component"
+  },
+  "list_tax_components": {
+    "title": "resources/tax_components/List Tax Components",
+    "href": "/resources/tax_components/list_tax_components"
+  }
+}

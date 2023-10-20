@@ -1,0 +1,41 @@
+configVersion: 1.0.0
+generation:
+  sdkClassName: CodatSyncCommerce
+  singleTagPerOp: false
+  telemetryEnabled: true
+features:
+  docs:
+    core: 0.24.0
+    examples: 0.1.1
+    globalSecurity: 0.1.0
+    globalServerURLs: 0.1.0
+    nameOverrides: 0.1.0
+    retries: 0.1.0
+csharp:
+  version: 2.2.0
+  author: Codat
+  description: Push merchants' data from your ecommerce or point-of-sale (POS) platform into your merchants' accounting platform.
+  dotnetVersion: net6.0
+  maxMethodParams: 0
+  packageName: Codat.Sync.Commerce
+docs:
+  version: ""
+go:
+  version: 2.2.0
+  flattenGlobalSecurity: false
+  maxMethodParams: 0
+  packageName: github.com/codatio/client-sdk-go/sync-for-commerce
+python:
+  version: 3.0.0
+  author: Codat
+  description: Push merchants' data from your ecommerce or point-of-sale (POS) platform into your merchants' accounting platform.
+  flattenGlobalSecurity: false
+  maxMethodParams: 0
+  packageName: codat-sync-for-commerce
+typescript:
+  version: 2.2.0
+  author: Codat
+  description: Push merchants' data from your ecommerce or point-of-sale (POS) platform into your merchants' accounting platform.
+  flattenGlobalSecurity: false
+  maxMethodParams: 0
+  packageName: '@codat/sync-for-commerce'

@@ -1,0 +1,39 @@
+## Get Dispute
+
+The *Get dispute* endpoint returns a single dispute for a given disputeId.
+
+[Disputes](https://docs.codat.io/commerce-api#/schemas/Dispute) are created when a customer is unsatisfied with their purchase or believe they have been charged incorrectly.
+
+Check out our [coverage explorer](https://knowledge.codat.io/supported-features/commerce?view=tab-by-data-type&dataType=commerce-disputes) for integrations that support getting a specific dispute.
+
+Before using this endpoint, you must have [retrieved data for the company](https://docs.codat.io/codat-api#/operations/refresh-company-data).
+
+
+{/* rendered from operation template */}
+
+import {LanguageOperation} from "/.gen/languages";
+import {LanguageSwitch} from "/.gen/languages";
+import GoParameters from "./_parameters/go.mdx";
+import GoResponse from "./_response/go.mdx";
+import GoUsage from "./_usage/go.mdx";
+import PythonParameters from "./_parameters/python.mdx";
+import PythonResponse from "./_response/python.mdx";
+import PythonUsage from "./_usage/python.mdx";
+import TypescriptParameters from "./_parameters/typescript.mdx";
+import TypescriptResponse from "./_response/typescript.mdx";
+import TypescriptUsage from "./_usage/typescript.mdx";
+import CsharpParameters from "./_parameters/csharp.mdx";
+import CsharpResponse from "./_response/csharp.mdx";
+import CsharpUsage from "./_usage/csharp.mdx";
+
+export const Operation = () => {
+    const go = <LanguageOperation parameters={<GoParameters/>} response={<GoResponse/>} usage={<GoUsage/>}/>
+    const python = <LanguageOperation parameters={<PythonParameters/>} response={<PythonResponse/>} usage={<PythonUsage/>}/>
+    const typescript = <LanguageOperation parameters={<TypescriptParameters/>} response={<TypescriptResponse/>} usage={<TypescriptUsage/>}/>
+    const csharp = <LanguageOperation parameters={<CsharpParameters/>} response={<CsharpResponse/>} usage={<CsharpUsage/>}/>
+    return <LanguageSwitch langToContent={{go, python, typescript, csharp}}/>
+}
+
+<Operation />
+
+{/* end rendered section */}

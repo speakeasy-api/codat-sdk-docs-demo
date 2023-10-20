@@ -1,0 +1,54 @@
+{
+  "[...slug]": {
+    "title": "Home",
+    "href": "/home"
+  },
+  "-- guides": {
+    "title": "Guides",
+    "type": "separator"
+  },
+  "installation": {
+    "title": "Installation",
+    "href": "/installation"
+  },
+  "-- resources": {
+    "title": "Resources",
+    "type": "separator"
+  },
+  "company_info": {
+    "title": "resources/Company Info",
+    "href": "/resources/company_info"
+  },
+  "customers": {
+    "title": "resources/Customers",
+    "href": "/resources/customers"
+  },
+  "disputes": {
+    "title": "resources/Disputes",
+    "href": "/resources/disputes"
+  },
+  "locations": {
+    "title": "resources/Locations",
+    "href": "/resources/locations"
+  },
+  "orders": {
+    "title": "resources/Orders",
+    "href": "/resources/orders"
+  },
+  "payments": {
+    "title": "resources/Payments",
+    "href": "/resources/payments"
+  },
+  "products": {
+    "title": "resources/Products",
+    "href": "/resources/products"
+  },
+  "tax_components": {
+    "title": "resources/Tax Components",
+    "href": "/resources/tax_components"
+  },
+  "transactions": {
+    "title": "resources/Transactions",
+    "href": "/resources/transactions"
+  }
+}

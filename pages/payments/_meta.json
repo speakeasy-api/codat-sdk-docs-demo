@@ -1,0 +1,18 @@
+{
+  "get_payment": {
+    "title": "resources/payments/Get Payment",
+    "href": "/resources/payments/get_payment"
+  },
+  "get_payment_method": {
+    "title": "resources/payments/Get Payment Method",
+    "href": "/resources/payments/get_payment_method"
+  },
+  "list_payments": {
+    "title": "resources/payments/List Payments",
+    "href": "/resources/payments/list_payments"
+  },
+  "list_payment_methods": {
+    "title": "resources/payments/List Payment Methods",
+    "href": "/resources/payments/list_payment_methods"
+  }
+}

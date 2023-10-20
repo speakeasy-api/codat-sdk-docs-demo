@@ -1,0 +1,18 @@
+{
+  "get_product": {
+    "title": "resources/products/Get Product",
+    "href": "/resources/products/get_product"
+  },
+  "get_product_category": {
+    "title": "resources/products/Get Product Category",
+    "href": "/resources/products/get_product_category"
+  },
+  "list_products": {
+    "title": "resources/products/List Products",
+    "href": "/resources/products/list_products"
+  },
+  "list_product_categories": {
+    "title": "resources/products/List Product Categories",
+    "href": "/resources/products/list_product_categories"
+  }
+}

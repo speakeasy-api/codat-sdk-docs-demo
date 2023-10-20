@@ -1,0 +1,24 @@
+```python ListTaxComponents.py
+import codatsynccommerce
+from codatsynccommerce.models import operations, shared
+
+s = codatsynccommerce.CodatSyncCommerce(
+    security=shared.Security(
+        auth_header="Basic BASE_64_ENCODED(API_KEY)",
+    ),
+)
+
+req = operations.ListTaxComponentsRequest(
+    company_id='8a210b68-6988-11ed-a1eb-0242ac120002',
+    connection_id='2e9d2c44-f675-40ba-8049-353bfcb5e171',
+    order_by='-modifiedDate',
+    page=1,
+    page_size=100,
+)
+
+res = s.tax_components.list(req)
+
+if res.tax_components is not None:
+    # handle response
+    pass
+```
