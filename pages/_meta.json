@@ -1,8 +1,4 @@
 {
-  "[...slug]": {
-    "title": "Home",
-    "href": "/home"
-  },
   "-- guides": {
     "title": "Guides",
     "type": "separator"
@@ -16,39 +12,39 @@
     "type": "separator"
   },
   "company_info": {
-    "title": "resources/Company Info",
+    "title": "Company Info",
     "href": "/resources/company_info"
   },
   "customers": {
-    "title": "resources/Customers",
+    "title": "Customers",
     "href": "/resources/customers"
   },
   "disputes": {
-    "title": "resources/Disputes",
+    "title": "Disputes",
     "href": "/resources/disputes"
   },
   "locations": {
-    "title": "resources/Locations",
+    "title": "Locations",
     "href": "/resources/locations"
   },
   "orders": {
-    "title": "resources/Orders",
+    "title": "Orders",
     "href": "/resources/orders"
   },
   "payments": {
-    "title": "resources/Payments",
+    "title": "Payments",
     "href": "/resources/payments"
   },
   "products": {
-    "title": "resources/Products",
+    "title": "Products",
     "href": "/resources/products"
   },
   "tax_components": {
-    "title": "resources/Tax Components",
+    "title": "Tax Components",
     "href": "/resources/tax_components"
   },
   "transactions": {
-    "title": "resources/Transactions",
+    "title": "Transactions",
     "href": "/resources/transactions"
   }
 }

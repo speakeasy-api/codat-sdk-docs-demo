@@ -3,22 +3,26 @@ import Collapsible from "/components/Collapsible";
 
 ##### `description` *{`Optional[str]`}*
 Service charges for this order.
-`A service charge`
+<br/>
+**Example value:** `A service charge`
 
 ---
 ##### `quantity` *{`Optional[int]`}*
 The number of times the charge is charged.
-`1`
+<br/>
+**Example value:** `1`
 
 ---
 ##### `tax_amount` *{`Optional[Decimal]`}*
 Amount of the service charge that is tax.
-`0`
+<br/>
+**Example value:** `0`
 
 ---
 ##### `tax_percentage` *{`Optional[Decimal]`}*
 Percentage rate (from 0 to 100) of any tax applied to the service charge.
-`0`
+<br/>
+**Example value:** `0`
 
 ---
 ##### `taxes` *{`List[TaxComponentAllocation]`}*
@@ -29,12 +33,14 @@ Taxes breakdown as applied to service charges.
 ---
 ##### `total_amount` *{`Optional[Decimal]`}*
 Total amount of the service charge, including tax.
-`0`
+<br/>
+**Example value:** `0`
 
 ---
 ##### `type` *{`Optional[ServiceChargeType]`}*
 The type of the service charge.
-`Overpayment`
+<br/>
+**Example value:** `Overpayment`
 <Collapsible content={() => import('/content/models/shared/service_charge_type/python.mdx')}>
 </Collapsible>
 

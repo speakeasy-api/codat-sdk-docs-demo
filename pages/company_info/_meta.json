@@ -1,6 +1,6 @@
 {
   "get_company_info": {
-    "title": "resources/company_info/Get Company Info",
+    "title": "Get Company Info",
     "href": "/resources/company_info/get_company_info"
   }
 }

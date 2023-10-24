@@ -3,7 +3,8 @@ import Collapsible from "/components/Collapsible";
 
 ##### *{`decimal`}* `Amount`
 Payment Amount (including gratuity).
-`194.12`
+<br/>
+**Example value:** `194.12`
 
 ---
 ##### *{`string`}* `CreatedDate`
@@ -26,7 +27,8 @@ When syncing data that contains `DateTime` fields from Codat, make sure you supp
 > 
 > Not all dates from Codat will contain information about time zones.  
 > Where it is not available from the underlying platform, Codat will return these as times local to the business whose data has been synced.
-`2022-10-23T00:00:00.000Z`
+<br/>
+**Example value:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### *{`string`}* `Currency`
@@ -37,7 +39,8 @@ The currency data type in Codat is the [ISO 4217](https://en.wikipedia.org/wiki/
 In line with the ISO 4217 specification, the code _XXX_ is used when the data source does not return a currency for a transaction. 
 
 There are only a very small number of edge cases where this currency code is returned by the Codat system.
-`GBP`
+<br/>
+**Example value:** `GBP`
 
 ---
 ##### *{`string`}* `DueDate`
@@ -60,25 +63,30 @@ When syncing data that contains `DateTime` fields from Codat, make sure you supp
 > 
 > Not all dates from Codat will contain information about time zones.  
 > Where it is not available from the underlying platform, Codat will return these as times local to the business whose data has been synced.
-`2022-10-23T00:00:00.000Z`
+<br/>
+**Example value:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### *{`string`}* `Id`
 A unique, persistent identifier for this record
-`13d946f0-c5d5-42bc-b092-97ece17923ab`
+<br/>
+**Example value:** `13d946f0-c5d5-42bc-b092-97ece17923ab`
 
 ---
 ##### *{`string`}* `ModifiedDate`
-`2022-10-23T00:00:00.000Z`
+<br/>
+**Example value:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### *{`string`}* `PaymentProvider`
 Service provider of the payment, if applicable.
-`Amazon Pay`
+<br/>
+**Example value:** `Amazon Pay`
 
 ---
 ##### *{`string`}* `SourceModifiedDate`
-`2022-10-23T00:00:00.000Z`
+<br/>
+**Example value:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### *{`PaymentStatus`}* `Status`
@@ -89,7 +97,8 @@ Status of the payment.
 ---
 ##### *{`PaymentType`}* `Type`
 Type of payment.
-`Cash`
+<br/>
+**Example value:** `Cash`
 <Collapsible content={() => import('/content/models/shared/payment_type/csharp.mdx')}>
 </Collapsible>
 

@@ -3,22 +3,26 @@ import Collapsible from "/components/Collapsible";
 
 ##### `Description` *{`*string`}*
 Service charges for this order.
-`A service charge`
+<br/>
+**Example value:** `A service charge`
 
 ---
 ##### `Quantity` *{`*int64`}*
 The number of times the charge is charged.
-`1`
+<br/>
+**Example value:** `1`
 
 ---
 ##### `TaxAmount` [*{ `*decimal.Big` }*](https://pkg.go.dev/github.com/ericlagergren/decimal#Big)
 Amount of the service charge that is tax.
-`0`
+<br/>
+**Example value:** `0`
 
 ---
 ##### `TaxPercentage` [*{ `*decimal.Big` }*](https://pkg.go.dev/github.com/ericlagergren/decimal#Big)
 Percentage rate (from 0 to 100) of any tax applied to the service charge.
-`0`
+<br/>
+**Example value:** `0`
 
 ---
 ##### `Taxes` *{`[]TaxComponentAllocation`}*
@@ -29,12 +33,14 @@ Taxes breakdown as applied to service charges.
 ---
 ##### `TotalAmount` [*{ `*decimal.Big` }*](https://pkg.go.dev/github.com/ericlagergren/decimal#Big)
 Total amount of the service charge, including tax.
-`0`
+<br/>
+**Example value:** `0`
 
 ---
 ##### `Type` *{`*ServiceChargeType`}*
 The type of the service charge.
-`Overpayment`
+<br/>
+**Example value:** `Overpayment`
 <Collapsible content={() => import('/content/models/shared/service_charge_type/go.mdx')}>
 </Collapsible>
 

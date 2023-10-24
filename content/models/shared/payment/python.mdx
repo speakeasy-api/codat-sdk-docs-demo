@@ -3,7 +3,8 @@ import Collapsible from "/components/Collapsible";
 
 ##### `amount` *{`Optional[Decimal]`}*
 Payment Amount (including gratuity)
-`194.12`
+<br/>
+**Example value:** `194.12`
 
 ---
 ##### `created_date` *{`Optional[str]`}*
@@ -26,7 +27,8 @@ When syncing data that contains `DateTime` fields from Codat, make sure you supp
 > 
 > Not all dates from Codat will contain information about time zones.  
 > Where it is not available from the underlying platform, Codat will return these as times local to the business whose data has been synced.
-`2022-10-23T00:00:00.000Z`
+<br/>
+**Example value:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### `currency` *{`Optional[str]`}*
@@ -37,7 +39,8 @@ The currency data type in Codat is the [ISO 4217](https://en.wikipedia.org/wiki/
 In line with the ISO 4217 specification, the code _XXX_ is used when the data source does not return a currency for a transaction. 
 
 There are only a very small number of edge cases where this currency code is returned by the Codat system.
-`GBP`
+<br/>
+**Example value:** `GBP`
 
 ---
 ##### `due_date` *{`Optional[str]`}*
@@ -60,16 +63,19 @@ When syncing data that contains `DateTime` fields from Codat, make sure you supp
 > 
 > Not all dates from Codat will contain information about time zones.  
 > Where it is not available from the underlying platform, Codat will return these as times local to the business whose data has been synced.
-`2022-10-23T00:00:00.000Z`
+<br/>
+**Example value:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### `id` *{`str`}*
 A unique, persistent identifier for this record
-`13d946f0-c5d5-42bc-b092-97ece17923ab`
+<br/>
+**Example value:** `13d946f0-c5d5-42bc-b092-97ece17923ab`
 
 ---
 ##### `modified_date` *{`Optional[str]`}*
-`2022-10-23T00:00:00.000Z`
+<br/>
+**Example value:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### `payment_method_ref` *{`Optional[PaymentMethodRef]`}*
@@ -80,11 +86,13 @@ The payment method the record is linked to in the accounting or commerce platfor
 ---
 ##### `payment_provider` *{`Optional[str]`}*
 Service provider of the payment, if applicable.
-`Amazon Pay`
+<br/>
+**Example value:** `Amazon Pay`
 
 ---
 ##### `source_modified_date` *{`Optional[str]`}*
-`2022-10-23T00:00:00.000Z`
+<br/>
+**Example value:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### `status` *{`Optional[PaymentStatus]`}*
