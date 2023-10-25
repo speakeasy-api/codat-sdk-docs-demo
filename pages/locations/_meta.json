@@ -1,10 +1,10 @@
 {
   "get_location": {
-    "title": "Get Location",
+    "title": "resources/locations/Get Location",
     "href": "/resources/locations/get_location"
   },
   "list_locations": {
-    "title": "List Locations",
+    "title": "resources/locations/List Locations",
     "href": "/resources/locations/list_locations"
   }
 }

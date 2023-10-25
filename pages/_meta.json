@@ -12,39 +12,39 @@
     "type": "separator"
   },
   "company_info": {
-    "title": "Company Info",
+    "title": "resources/Company Info",
     "href": "/resources/company_info"
   },
   "customers": {
-    "title": "Customers",
+    "title": "resources/Customers",
     "href": "/resources/customers"
   },
   "disputes": {
-    "title": "Disputes",
+    "title": "resources/Disputes",
     "href": "/resources/disputes"
   },
   "locations": {
-    "title": "Locations",
+    "title": "resources/Locations",
     "href": "/resources/locations"
   },
   "orders": {
-    "title": "Orders",
+    "title": "resources/Orders",
     "href": "/resources/orders"
   },
   "payments": {
-    "title": "Payments",
+    "title": "resources/Payments",
     "href": "/resources/payments"
   },
   "products": {
-    "title": "Products",
+    "title": "resources/Products",
     "href": "/resources/products"
   },
   "tax_components": {
-    "title": "Tax Components",
+    "title": "resources/Tax Components",
     "href": "/resources/tax_components"
   },
   "transactions": {
-    "title": "Transactions",
+    "title": "resources/Transactions",
     "href": "/resources/transactions"
   }
 }

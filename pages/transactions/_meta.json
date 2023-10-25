@@ -1,10 +1,10 @@
 {
   "get_transaction": {
-    "title": "Get Transaction",
+    "title": "resources/transactions/Get Transaction",
     "href": "/resources/transactions/get_transaction"
   },
   "list_transactions": {
-    "title": "List Transactions",
+    "title": "resources/transactions/List Transactions",
     "href": "/resources/transactions/list_transactions"
   }
 }

@@ -1,10 +1,10 @@
 {
   "get_dispute": {
-    "title": "Get Dispute",
+    "title": "resources/disputes/Get Dispute",
     "href": "/resources/disputes/get_dispute"
   },
   "list_disputes": {
-    "title": "List Disputes",
+    "title": "resources/disputes/List Disputes",
     "href": "/resources/disputes/list_disputes"
   }
 }
