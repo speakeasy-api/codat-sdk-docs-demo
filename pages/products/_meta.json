@@ -1,18 +1,18 @@
 {
-  "get_product": {
-    "title": "resources/products/Get Product",
-    "href": "/resources/products/get_product"
+  "get": {
+    "title": "resources/products/Get",
+    "href": "/resources/products/get"
   },
-  "get_product_category": {
-    "title": "resources/products/Get Product Category",
-    "href": "/resources/products/get_product_category"
+  "get_category": {
+    "title": "resources/products/Get Category",
+    "href": "/resources/products/get_category"
   },
-  "list_products": {
-    "title": "resources/products/List Products",
-    "href": "/resources/products/list_products"
+  "list": {
+    "title": "resources/products/List",
+    "href": "/resources/products/list"
   },
-  "list_product_categories": {
-    "title": "resources/products/List Product Categories",
-    "href": "/resources/products/list_product_categories"
+  "list_categories": {
+    "title": "resources/products/List Categories",
+    "href": "/resources/products/list_categories"
   }
 }

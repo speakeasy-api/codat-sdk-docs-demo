@@ -1,10 +1,10 @@
 {
-  "get_order": {
-    "title": "resources/orders/Get Order",
-    "href": "/resources/orders/get_order"
+  "get": {
+    "title": "resources/orders/Get",
+    "href": "/resources/orders/get"
   },
-  "list_orders": {
-    "title": "resources/orders/List Orders",
-    "href": "/resources/orders/list_orders"
+  "list": {
+    "title": "resources/orders/List",
+    "href": "/resources/orders/list"
   }
 }

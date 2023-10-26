@@ -1,10 +1,10 @@
 {
-  "get_customer": {
-    "title": "resources/customers/Get Customer",
-    "href": "/resources/customers/get_customer"
+  "get": {
+    "title": "resources/customers/Get",
+    "href": "/resources/customers/get"
   },
-  "list_customers": {
-    "title": "resources/customers/List Customers",
-    "href": "/resources/customers/list_customers"
+  "list": {
+    "title": "resources/customers/List",
+    "href": "/resources/customers/list"
   }
 }
