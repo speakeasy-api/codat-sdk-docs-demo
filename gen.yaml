@@ -5,7 +5,7 @@ generation:
   telemetryEnabled: true
 features:
   docs:
-    core: 0.26.0
+    core: 0.27.0
     examples: 0.1.1
     globalSecurity: 0.1.0
     globalServerURLs: 0.1.0
@@ -16,13 +16,16 @@ csharp:
   author: Codat
   description: Push merchants' data from your ecommerce or point-of-sale (POS) platform into your merchants' accounting platform.
   dotnetVersion: net6.0
+  installationURL: Codat.Sync.Commerce
   maxMethodParams: 0
   packageName: Codat.Sync.Commerce
+  sdkClassName: Codat.Sync.Commerce
 docs:
   version: ""
 go:
   version: 2.2.0
   flattenGlobalSecurity: false
+  installationURL: github.com/codatio/client-sdk-go/sync-for-commerce
   maxMethodParams: 0
   packageName: github.com/codatio/client-sdk-go/sync-for-commerce
 python:
@@ -30,6 +33,7 @@ python:
   author: Codat
   description: Push merchants' data from your ecommerce or point-of-sale (POS) platform into your merchants' accounting platform.
   flattenGlobalSecurity: false
+  installationURL: codat-sync-for-commerce
   maxMethodParams: 0
   packageName: codat-sync-for-commerce
 typescript:
@@ -37,5 +41,6 @@ typescript:
   author: Codat
   description: Push merchants' data from your ecommerce or point-of-sale (POS) platform into your merchants' accounting platform.
   flattenGlobalSecurity: false
+  installationURL: '@codat/sync-for-commerce'
   maxMethodParams: 0
   packageName: '@codat/sync-for-commerce'

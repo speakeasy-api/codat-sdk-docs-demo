@@ -1,6 +1,5 @@
 {
   "get": {
-    "title": "resources/company_info/Get",
-    "href": "/resources/company_info/get"
+    "title": "Get"
   }
 }

@@ -22,7 +22,7 @@ In line with the ISO 4217 specification, the code _XXX_ is used when the data so
 
 There are only a very small number of edge cases where this currency code is returned by the Codat system.
 <br/>
-**Example value:** `GBP`
+**Example:** `GBP`
 
 ---
 ##### *{`string`}* `CommercePlatformRef`
@@ -32,13 +32,13 @@ Identifier or reference for the company in the commerce platform
 ##### *{`string`}* `CompanyLegalName`
 The full legal name of the company
 <br/>
-**Example value:** `Codat Limited`
+**Example:** `Codat Limited`
 
 ---
 ##### *{`string`}* `CompanyName`
 The name of the company
 <br/>
-**Example value:** `Codat`
+**Example:** `Codat`
 
 ---
 ##### *{`string`}* `CreatedDate`
@@ -62,12 +62,12 @@ When syncing data that contains `DateTime` fields from Codat, make sure you supp
 \> Not all dates from Codat will contain information about time zones.  
 \> Where it is not available from the underlying platform, Codat will return these as times local to the business whose data has been synced.
 <br/>
-**Example value:** `2022-10-23T00:00:00.000Z`
+**Example:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### *{`string`}* `ModifiedDate`
 <br/>
-**Example value:** `2022-10-23T00:00:00.000Z`
+**Example:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### *{`List<PhoneNumber>`}* `PhoneNumbers`
@@ -79,24 +79,24 @@ Phone numbers associated with the company
 ##### *{`string`}* `RegistrationNumber`
 The registration number of the company
 <br/>
-**Example value:** `10480375`
+**Example:** `10480375`
 
 ---
 ##### *{`string`}* `SourceModifiedDate`
 <br/>
-**Example value:** `2022-10-23T00:00:00.000Z`
+**Example:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### *{`Dictionary<String, *string*>`}* `SourceUrls`
 URL addresses for the originating system. For example, potential use cases include 'deeplinking' to the originating system
 <br/>
-**Example value:** `[object Object]`
+**Example:** `[object Object]`
 
 ---
 ##### *{`List<CompanyInfoWeblink>`}* `WebLinks`
 Weblinks associated with the company
 <br/>
-**Example value:** `[object Object]`
+**Example:** `[object Object]`
 <Collapsible content={() => import('/content/models/shared/company_info_weblink/csharp.mdx')}>
 </Collapsible>
 

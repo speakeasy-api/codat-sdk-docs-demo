@@ -4,47 +4,37 @@
     "type": "separator"
   },
   "installation": {
-    "title": "Installation",
-    "href": "/installation"
+    "title": "Installation"
   },
   "-- resources": {
     "title": "Resources",
     "type": "separator"
   },
   "company_info": {
-    "title": "resources/Company Info",
-    "href": "/resources/company_info"
+    "title": "Company Info"
   },
   "customers": {
-    "title": "resources/Customers",
-    "href": "/resources/customers"
+    "title": "Customers"
   },
   "disputes": {
-    "title": "resources/Disputes",
-    "href": "/resources/disputes"
+    "title": "Disputes"
   },
   "locations": {
-    "title": "resources/Locations",
-    "href": "/resources/locations"
+    "title": "Locations"
   },
   "orders": {
-    "title": "resources/Orders",
-    "href": "/resources/orders"
+    "title": "Orders"
   },
   "payments": {
-    "title": "resources/Payments",
-    "href": "/resources/payments"
+    "title": "Payments"
   },
   "products": {
-    "title": "resources/Products",
-    "href": "/resources/products"
+    "title": "Products"
   },
   "tax_components": {
-    "title": "resources/Tax Components",
-    "href": "/resources/tax_components"
+    "title": "Tax Components"
   },
   "transactions": {
-    "title": "resources/Transactions",
-    "href": "/resources/transactions"
+    "title": "Transactions"
   }
 }

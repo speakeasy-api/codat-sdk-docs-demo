@@ -1,18 +1,14 @@
 {
   "get": {
-    "title": "resources/payments/Get",
-    "href": "/resources/payments/get"
+    "title": "Get"
   },
   "get_method": {
-    "title": "resources/payments/Get Method",
-    "href": "/resources/payments/get_method"
+    "title": "Get Method"
   },
   "list": {
-    "title": "resources/payments/List",
-    "href": "/resources/payments/list"
+    "title": "List"
   },
   "list_methods": {
-    "title": "resources/payments/List Methods",
-    "href": "/resources/payments/list_methods"
+    "title": "List Methods"
   }
 }

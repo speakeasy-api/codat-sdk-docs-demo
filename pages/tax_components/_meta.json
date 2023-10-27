@@ -1,10 +1,8 @@
 {
   "get": {
-    "title": "resources/tax_components/Get",
-    "href": "/resources/tax_components/get"
+    "title": "Get"
   },
   "list": {
-    "title": "resources/tax_components/List",
-    "href": "/resources/tax_components/list"
+    "title": "List"
   }
 }

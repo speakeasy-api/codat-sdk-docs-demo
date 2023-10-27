@@ -1,18 +1,14 @@
 {
   "get": {
-    "title": "resources/products/Get",
-    "href": "/resources/products/get"
+    "title": "Get"
   },
   "get_category": {
-    "title": "resources/products/Get Category",
-    "href": "/resources/products/get_category"
+    "title": "Get Category"
   },
   "list": {
-    "title": "resources/products/List",
-    "href": "/resources/products/list"
+    "title": "List"
   },
   "list_categories": {
-    "title": "resources/products/List Categories",
-    "href": "/resources/products/list_categories"
+    "title": "List Categories"
   }
 }

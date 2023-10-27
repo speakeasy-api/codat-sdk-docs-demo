@@ -22,7 +22,7 @@ When syncing data that contains `DateTime` fields from Codat, make sure you supp
 \> Not all dates from Codat will contain information about time zones.  
 \> Where it is not available from the underlying platform, Codat will return these as times local to the business whose data has been synced.
 <br/>
-**Example value:** `2022-10-23T00:00:00.000Z`
+**Example:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### `Currency` *{`string`}*
@@ -34,7 +34,7 @@ In line with the ISO 4217 specification, the code _XXX_ is used when the data so
 
 There are only a very small number of edge cases where this currency code is returned by the Codat system.
 <br/>
-**Example value:** `GBP`
+**Example:** `GBP`
 
 ---
 ##### `DisputedTransactions` *{`[]TransactionSourceRef`}*
@@ -64,35 +64,35 @@ When syncing data that contains `DateTime` fields from Codat, make sure you supp
 \> Not all dates from Codat will contain information about time zones.  
 \> Where it is not available from the underlying platform, Codat will return these as times local to the business whose data has been synced.
 <br/>
-**Example value:** `2022-10-23T00:00:00.000Z`
+**Example:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### `ID` *{`string`}*
 A unique, persistent identifier for this record
 <br/>
-**Example value:** `13d946f0-c5d5-42bc-b092-97ece17923ab`
+**Example:** `13d946f0-c5d5-42bc-b092-97ece17923ab`
 
 ---
 ##### `ModifiedDate` *{`*string`}*
 <br/>
-**Example value:** `2022-10-23T00:00:00.000Z`
+**Example:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### `Reason` *{`*string`}*
 Reason for the dispute
 <br/>
-**Example value:** `Unhappy with product`
+**Example:** `Unhappy with product`
 
 ---
 ##### `SourceModifiedDate` *{`*string`}*
 <br/>
-**Example value:** `2022-10-23T00:00:00.000Z`
+**Example:** `2022-10-23T00:00:00.000Z`
 
 ---
 ##### `Status` *{`*DisputeStatus`}*
 Current status of the dispute
 <br/>
-**Example value:** `EvidenceRequired`
+**Example:** `EvidenceRequired`
 <Collapsible content={() => import('/content/models/shared/dispute_status/go.mdx')}>
 </Collapsible>
 
@@ -100,5 +100,5 @@ Current status of the dispute
 ##### `TotalAmount` *{`interface{}`}*
 Total transaction amount that is under dispute.
 <br/>
-**Example value:** `194.12`
+**Example:** `194.12`
 

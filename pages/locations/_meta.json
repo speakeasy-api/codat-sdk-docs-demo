@@ -1,10 +1,8 @@
 {
   "get": {
-    "title": "resources/locations/Get",
-    "href": "/resources/locations/get"
+    "title": "Get"
   },
   "list": {
-    "title": "resources/locations/List",
-    "href": "/resources/locations/list"
+    "title": "List"
   }
 }
