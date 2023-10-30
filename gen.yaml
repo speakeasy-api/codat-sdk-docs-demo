@@ -19,6 +19,7 @@ csharp:
   installationURL: Codat.Sync.Commerce
   maxMethodParams: 0
   packageName: Codat.Sync.Commerce
+  published: true
   sdkClassName: Codat.Sync.Commerce
 docs:
   version: ""
@@ -36,6 +37,7 @@ python:
   installationURL: codat-sync-for-commerce
   maxMethodParams: 0
   packageName: codat-sync-for-commerce
+  published: true
 typescript:
   version: 2.2.0
   author: Codat
