@@ -1,0 +1,32 @@
+```go Get.go
+package main
+
+import(
+	"context"
+	"log"
+	syncforcommerce "github.com/codatio/client-sdk-go/sync-for-commerce/v2"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/pkg/models/shared"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/pkg/models/operations"
+)
+
+func main() {
+    s := syncforcommerce.New(
+        syncforcommerce.WithSecurity(shared.Security{
+            AuthHeader: "Basic BASE_64_ENCODED(API_KEY)",
+        }),
+    )
+
+    ctx := context.Background()
+    res, err := s.Sync.Get(ctx, operations.GetSyncByIDRequest{
+        CompanyID: "8a210b68-6988-11ed-a1eb-0242ac120002",
+        SyncID: "6fb40d5e-b13e-11ed-afa1-0242ac120002",
+    })
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.CompanySyncStatus != nil {
+        // handle response
+    }
+}
+```

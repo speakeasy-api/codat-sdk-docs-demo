@@ -1,0 +1,21 @@
+```python GetSyncFlowUrl.py
+import codatsynccommerce
+from codatsynccommerce.models import operations, shared
+
+s = codatsynccommerce.CodatSyncCommerce(
+    security=shared.Security(
+        auth_header="Basic BASE_64_ENCODED(API_KEY)",
+    ),
+)
+
+req = operations.GetSyncFlowURLRequest(
+    accounting_key='string',
+    commerce_key='string',
+)
+
+res = s.connections.get_sync_flow_url(req)
+
+if res.sync_flow_url is not None:
+    # handle response
+    pass
+```

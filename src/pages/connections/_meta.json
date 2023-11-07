@@ -1,0 +1,17 @@
+{
+  "create": {
+    "title": "Create"
+  },
+  "get_sync_flow_url": {
+    "title": "Get Sync Flow Url"
+  },
+  "list": {
+    "title": "List"
+  },
+  "update_authorization": {
+    "title": "Update Authorization"
+  },
+  "update_connection": {
+    "title": "Update Connection"
+  }
+}

@@ -1,0 +1,30 @@
+```go UpdateConfigTextSyncFlow.go
+package main
+
+import(
+	"context"
+	"log"
+	syncforcommerce "github.com/codatio/client-sdk-go/sync-for-commerce/v2"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/pkg/models/shared"
+)
+
+func main() {
+    s := syncforcommerce.New(
+        syncforcommerce.WithSecurity(shared.Security{
+            AuthHeader: "Basic BASE_64_ENCODED(API_KEY)",
+        }),
+    )
+
+    ctx := context.Background()
+    res, err := s.SyncFlowSettings.UpdateConfigTextSyncFlow(ctx, &map[string]shared.Localization{
+        "key": shared.Localization{},
+    })
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.LocalizationInfo != nil {
+        // handle response
+    }
+}
+```

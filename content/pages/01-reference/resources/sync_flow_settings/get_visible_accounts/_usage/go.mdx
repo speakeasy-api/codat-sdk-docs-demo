@@ -1,0 +1,32 @@
+```go GetVisibleAccounts.go
+package main
+
+import(
+	"context"
+	"log"
+	syncforcommerce "github.com/codatio/client-sdk-go/sync-for-commerce/v2"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/pkg/models/shared"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/pkg/models/operations"
+)
+
+func main() {
+    s := syncforcommerce.New(
+        syncforcommerce.WithSecurity(shared.Security{
+            AuthHeader: "Basic BASE_64_ENCODED(API_KEY)",
+        }),
+    )
+
+    ctx := context.Background()
+    res, err := s.SyncFlowSettings.GetVisibleAccounts(ctx, operations.GetVisibleAccountsRequest{
+        ClientID: "d9d8d69a-674e-40f4-a7cc-8796ed151a05",
+        PlatformKey: "gbol",
+    })
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.VisibleAccounts != nil {
+        // handle response
+    }
+}
+```

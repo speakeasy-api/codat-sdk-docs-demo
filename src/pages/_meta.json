@@ -10,31 +10,19 @@
     "title": "Resources",
     "type": "separator"
   },
-  "company_info": {
-    "title": "Company Info"
+  "advanced_controls": {
+    "title": "Advanced Controls"
   },
-  "customers": {
-    "title": "Customers"
+  "connections": {
+    "title": "Connections"
   },
-  "disputes": {
-    "title": "Disputes"
+  "integrations": {
+    "title": "Integrations"
   },
-  "locations": {
-    "title": "Locations"
+  "sync": {
+    "title": "Sync"
   },
-  "orders": {
-    "title": "Orders"
-  },
-  "payments": {
-    "title": "Payments"
-  },
-  "products": {
-    "title": "Products"
-  },
-  "tax_components": {
-    "title": "Tax Components"
-  },
-  "transactions": {
-    "title": "Transactions"
+  "sync_flow_settings": {
+    "title": "Sync Flow Settings"
   }
 }

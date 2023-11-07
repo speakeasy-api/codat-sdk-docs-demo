@@ -1,0 +1,32 @@
+```go GetSyncFlowUrl.go
+package main
+
+import(
+	"context"
+	"log"
+	syncforcommerce "github.com/codatio/client-sdk-go/sync-for-commerce/v2"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/pkg/models/shared"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/pkg/models/operations"
+)
+
+func main() {
+    s := syncforcommerce.New(
+        syncforcommerce.WithSecurity(shared.Security{
+            AuthHeader: "Basic BASE_64_ENCODED(API_KEY)",
+        }),
+    )
+
+    ctx := context.Background()
+    res, err := s.Connections.GetSyncFlowURL(ctx, operations.GetSyncFlowURLRequest{
+        AccountingKey: "string",
+        CommerceKey: "string",
+    })
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.SyncFlowURL != nil {
+        // handle response
+    }
+}
+```

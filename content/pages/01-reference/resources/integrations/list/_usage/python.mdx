@@ -1,0 +1,22 @@
+```python List.py
+import codatsynccommerce
+from codatsynccommerce.models import operations, shared
+
+s = codatsynccommerce.CodatSyncCommerce(
+    security=shared.Security(
+        auth_header="Basic BASE_64_ENCODED(API_KEY)",
+    ),
+)
+
+req = operations.ListIntegrationsRequest(
+    order_by='-modifiedDate',
+    page=1,
+    page_size=100,
+)
+
+res = s.integrations.list(req)
+
+if res.integrations is not None:
+    # handle response
+    pass
+```

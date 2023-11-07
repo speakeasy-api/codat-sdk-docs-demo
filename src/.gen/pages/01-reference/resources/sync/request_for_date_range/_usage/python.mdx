@@ -1,0 +1,26 @@
+```python RequestForDateRange.py
+import codatsynccommerce
+from codatsynccommerce.models import operations, shared
+
+s = codatsynccommerce.CodatSyncCommerce(
+    security=shared.Security(
+        auth_header="Basic BASE_64_ENCODED(API_KEY)",
+    ),
+)
+
+req = operations.RequestSyncForDateRangeRequest(
+    sync_range=shared.SyncRange(
+        date_range=shared.DateRange(
+            finish='2022-10-23T00:00:00.000Z',
+            start='2022-10-23T00:00:00.000Z',
+        ),
+    ),
+    company_id='8a210b68-6988-11ed-a1eb-0242ac120002',
+)
+
+res = s.sync.request_for_date_range(req)
+
+if res.sync_summary is not None:
+    # handle response
+    pass
+```

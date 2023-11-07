@@ -2,25 +2,12 @@
 import Collapsible from "/src/components/Collapsible";
 import Labels from "/src/lib/labels";
 
-##### `links`: *{`Links`}*
-<Collapsible content={() => import('/content/models/shared/links/typescript.mdx')} openLabel={Labels.showProperties} closeLabel={Labels.hideProperties}>
+##### `accounts?`: *{`Record<string, ConfigAccount>`}*
+<Collapsible content={() => import('/content/models/shared/config_account/typescript.mdx')} openLabel={Labels.showProperties} closeLabel={Labels.hideProperties}>
 </Collapsible>
 
 ---
-##### `pageNumber`: *{`number`}*
-Current page number.
-
----
-##### `pageSize`: *{`number`}*
-Number of items to return in results array.
-
----
-##### `results?`: *{`Payment[]`}*
-<Collapsible content={() => import('/content/models/shared/payment/typescript.mdx')} openLabel={Labels.showProperties} closeLabel={Labels.hideProperties}>
-</Collapsible>
-
----
-##### `totalResults`: *{`number`}*
-Total number of items.
+##### `syncPayments?`: *{`boolean`}*
+Boolean indicator for syncing sales.
 
 

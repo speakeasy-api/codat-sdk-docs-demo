@@ -1,0 +1,18 @@
+```csharp Get.cs
+using Codat.Sync.Commerce;
+using Codat.Sync.Commerce.Models.Shared;
+using Codat.Sync.Commerce.Models.Operations;
+
+var sdk = new CodatSyncCommerce(
+    security: new Security() {
+        AuthHeader = "Basic BASE_64_ENCODED(API_KEY)",
+    }
+);
+
+var res = await sdk.Sync.GetAsync(new GetSyncByIdRequest() {
+    CompanyId = "8a210b68-6988-11ed-a1eb-0242ac120002",
+    SyncId = "6fb40d5e-b13e-11ed-afa1-0242ac120002",
+});
+
+// handle response
+```

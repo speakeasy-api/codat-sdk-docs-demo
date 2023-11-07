@@ -1,0 +1,20 @@
+```typescript GetConfiguration.ts
+import { CodatSyncCommerce } from "@codat/sync-for-commerce";
+
+(async() => {
+  const sdk = new CodatSyncCommerce({
+    security: {
+      authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+    },
+  });
+
+  const res = await sdk.advancedControls.getConfiguration({
+    companyId: "8a210b68-6988-11ed-a1eb-0242ac120002",
+  });
+
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

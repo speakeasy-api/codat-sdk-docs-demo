@@ -2,25 +2,12 @@
 import Collapsible from "/src/components/Collapsible";
 import Labels from "/src/lib/labels";
 
-##### `Links` *{`Links`}*
-<Collapsible content={() => import('/content/models/shared/links/go.mdx')} openLabel={Labels.showProperties} closeLabel={Labels.hideProperties}>
+##### `Accounts` *{`map[string]ConfigAccount`}*
+<Collapsible content={() => import('/content/models/shared/config_account/go.mdx')} openLabel={Labels.showProperties} closeLabel={Labels.hideProperties}>
 </Collapsible>
 
 ---
-##### `PageNumber` *{`int64`}*
-Current page number.
-
----
-##### `PageSize` *{`int64`}*
-Number of items to return in results array.
-
----
-##### `Results` *{`[]Payment`}*
-<Collapsible content={() => import('/content/models/shared/payment/go.mdx')} openLabel={Labels.showProperties} closeLabel={Labels.hideProperties}>
-</Collapsible>
-
----
-##### `TotalResults` *{`int64`}*
-Total number of items.
+##### `SyncPayments` *{`*bool`}*
+Boolean indicator for syncing sales.
 
 

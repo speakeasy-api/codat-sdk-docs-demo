@@ -1,0 +1,20 @@
+```csharp Request.cs
+using Codat.Sync.Commerce;
+using Codat.Sync.Commerce.Models.Shared;
+using Codat.Sync.Commerce.Models.Operations;
+
+var sdk = new CodatSyncCommerce(
+    security: new Security() {
+        AuthHeader = "Basic BASE_64_ENCODED(API_KEY)",
+    }
+);
+
+var res = await sdk.Sync.RequestAsync(new RequestSyncRequest() {
+    SyncToLatestArgs = new SyncToLatestArgs() {
+        SyncTo = "2022-10-23T00:00:00.000Z",
+    },
+    CompanyId = "8a210b68-6988-11ed-a1eb-0242ac120002",
+});
+
+// handle response
+```

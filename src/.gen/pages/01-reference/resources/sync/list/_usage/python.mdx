@@ -1,0 +1,20 @@
+```python List.py
+import codatsynccommerce
+from codatsynccommerce.models import operations, shared
+
+s = codatsynccommerce.CodatSyncCommerce(
+    security=shared.Security(
+        auth_header="Basic BASE_64_ENCODED(API_KEY)",
+    ),
+)
+
+req = operations.ListSyncsRequest(
+    company_id='8a210b68-6988-11ed-a1eb-0242ac120002',
+)
+
+res = s.sync.list(req)
+
+if res.classes is not None:
+    # handle response
+    pass
+```
