@@ -1,0 +1,14 @@
+{
+  "get": {
+    "title": "Get"
+  },
+  "get_category": {
+    "title": "Get Category"
+  },
+  "list": {
+    "title": "List"
+  },
+  "list_categories": {
+    "title": "List Categories"
+  }
+}

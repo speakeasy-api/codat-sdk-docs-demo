@@ -1,22 +1,21 @@
 configVersion: 1.0.0
 generation:
-  comments: {}
   sdkClassName: CodatSyncCommerce
+  singleTagPerOp: false
+  telemetryEnabled: true
 features:
-  docs: {}
+  docs:
+    core: 1.2.1
+    examples: 0.1.1
+    globalSecurity: 0.1.0
+    globalServerURLs: 0.1.0
+    nameOverrides: 0.1.0
+    retries: 0.1.0
 csharp:
   version: 2.2.0
   author: Codat
   description: Push merchants' data from your ecommerce or point-of-sale (POS) platform into your merchants' accounting platform.
   dotnetVersion: net6.0
-  imports:
-    option: openapi
-    paths:
-      callbacks: Models/Callbacks
-      errors: Models/Errors
-      operations: Models/Requests
-      shared: Models/Components
-      webhooks: Models/Webhooks
   installationURL: Codat.Sync.Commerce
   maxMethodParams: 0
   packageName: Codat.Sync.Commerce
@@ -24,43 +23,17 @@ csharp:
   sdkClassName: Codat.Sync.Commerce
 docs:
   version: ""
-  imports:
-    option: openapi
-    paths:
-      callbacks: callbacks
-      errors: errors
-      operations: operations
-      shared: shared
-      webhooks: webhooks
 go:
   version: 2.2.0
-  clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: false
-  imports:
-    option: openapi
-    paths:
-      callbacks: models/callbacks
-      errors: models/sdkerrors
-      operations: models/operations
-      shared: models/components
-      webhooks: models/webhooks
   installationURL: github.com/codatio/client-sdk-go/sync-for-commerce
   maxMethodParams: 0
   packageName: github.com/codatio/client-sdk-go/sync-for-commerce
 python:
   version: 3.0.0
   author: Codat
-  clientServerStatusCodesAsErrors: true
   description: Push merchants' data from your ecommerce or point-of-sale (POS) platform into your merchants' accounting platform.
   flattenGlobalSecurity: false
-  imports:
-    option: openapi
-    paths:
-      callbacks: models/callbacks
-      errors: models/errors
-      operations: models/operations
-      shared: models/components
-      webhooks: models/webhooks
   installationURL: codat-sync-for-commerce
   maxMethodParams: 0
   packageName: codat-sync-for-commerce
@@ -68,17 +41,8 @@ python:
 typescript:
   version: 2.2.0
   author: Codat
-  clientServerStatusCodesAsErrors: true
   description: Push merchants' data from your ecommerce or point-of-sale (POS) platform into your merchants' accounting platform.
   flattenGlobalSecurity: false
-  imports:
-    option: openapi
-    paths:
-      callbacks: models/callbacks
-      errors: models/errors
-      operations: models/operations
-      shared: models/components
-      webhooks: models/webhooks
   installationURL: '@codat/sync-for-commerce'
   maxMethodParams: 0
   packageName: '@codat/sync-for-commerce'

@@ -1,0 +1,14 @@
+{
+  "get": {
+    "title": "Get"
+  },
+  "get_method": {
+    "title": "Get Method"
+  },
+  "list": {
+    "title": "List"
+  },
+  "list_methods": {
+    "title": "List Methods"
+  }
+}
