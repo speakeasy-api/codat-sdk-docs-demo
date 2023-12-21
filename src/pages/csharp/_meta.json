@@ -1,0 +1,18 @@
+{
+  "-- guides": {
+    "title": "Guides",
+    "type": "separator"
+  },
+  "client_sdks": "Client SDKs",
+  "installation": "Installation",
+  "server_options": "Server Options",
+  "-- resources": {
+    "title": "Resources",
+    "type": "separator"
+  },
+  "sync_flow_settings": "Sync Flow Settings",
+  "advanced_controls": "Advanced Controls",
+  "connections": "Connections",
+  "sync": "Sync",
+  "integrations": "Integrations"
+}

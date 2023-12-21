@@ -1,0 +1,47 @@
+
+<CH.Code>
+```go GetSyncFlowUrl.go
+package main
+
+import(
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/models/components"
+	syncforcommerce "github.com/codatio/client-sdk-go/sync-for-commerce/v2"
+	"context"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/models/operations"
+	"log"
+)
+
+func main() {
+    s := syncforcommerce.New(
+        syncforcommerce.WithSecurity(components.Security{
+            AuthHeader: "Basic BASE_64_ENCODED(API_KEY)",
+        }),
+    )
+
+    ctx := context.Background()
+    res, err := s.Connections.GetSyncFlowURL(ctx, operations.GetSyncFlowURLRequest{
+        AccountingKey: "string",
+        CommerceKey: "string",
+    })
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.SyncFlowURL != nil {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "string",
+    "correlationId": "string",
+    "detailedErrorCode": 963663,
+    "error": "string",
+    "service": "string",
+    "statusCode": 272656
+  }
+```
+</CH.Code>

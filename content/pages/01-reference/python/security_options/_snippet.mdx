@@ -1,0 +1,26 @@
+{/* Start Python Security Options */}
+### Per-Client Security Schemes
+
+This SDK supports the following security scheme globally:
+
+
+
+You can set the security parameters through the `security` optional parameter when initializing the SDK client instance. For example:
+```python
+import codatsynccommerce
+from codatsynccommerce.models import components
+
+s = codatsynccommerce.CodatSyncCommerce(
+    security=components.Security(
+        auth_header="Basic BASE_64_ENCODED(API_KEY)",
+    ),
+)
+
+
+res = s.sync_flow_settings.get_config_text_sync_flow()
+
+if res.localization_info is not None:
+    # handle response
+    pass
+```
+{/* End Python Security Options */}

@@ -1,0 +1,52 @@
+
+<CH.Code>
+```go RequestForDateRange.go
+package main
+
+import(
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/models/components"
+	syncforcommerce "github.com/codatio/client-sdk-go/sync-for-commerce/v2"
+	"context"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/models/operations"
+	"log"
+)
+
+func main() {
+    s := syncforcommerce.New(
+        syncforcommerce.WithSecurity(components.Security{
+            AuthHeader: "Basic BASE_64_ENCODED(API_KEY)",
+        }),
+    )
+
+    ctx := context.Background()
+    res, err := s.Sync.RequestForDateRange(ctx, operations.RequestSyncForDateRangeRequest{
+        SyncRange: &components.SyncRange{
+            DateRange: components.DateRange{
+                Finish: "2022-10-23T00:00:00Z",
+                Start: "2022-10-23T00:00:00Z",
+            },
+        },
+        CompanyID: "8a210b68-6988-11ed-a1eb-0242ac120002",
+    })
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.SyncSummary != nil {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "string",
+    "correlationId": "string",
+    "detailedErrorCode": 778157,
+    "error": "string",
+    "service": "string",
+    "statusCode": 140350
+  }
+```
+</CH.Code>

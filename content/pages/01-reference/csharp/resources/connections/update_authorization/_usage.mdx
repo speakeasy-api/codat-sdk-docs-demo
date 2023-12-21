@@ -1,0 +1,38 @@
+
+<CH.Code>
+```csharp UpdateAuthorization.cs
+using Codat.Sync.Commerce;
+using Codat.Sync.Commerce.Models.Components;
+using Codat.Sync.Commerce.Models.Requests;
+using System.Collections.Generic;
+
+var sdk = new CodatSyncCommerce(
+    security: new Security() {
+        AuthHeader = "Basic BASE_64_ENCODED(API_KEY)",
+    });
+
+UpdateConnectionAuthorizationRequest req = new UpdateConnectionAuthorizationRequest() {
+    RequestBody = new Dictionary<string, string>() {
+        { "key", "string" },
+    },
+    CompanyId = "8a210b68-6988-11ed-a1eb-0242ac120002",
+    ConnectionId = "2e9d2c44-f675-40ba-8049-353bfcb5e171",
+};
+
+var res = await sdk.Connections.UpdateAuthorizationAsync(req);
+
+// handle response
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "string",
+    "correlationId": "string",
+    "detailedErrorCode": 791725,
+    "error": "string",
+    "service": "string",
+    "statusCode": 812169
+  }
+```
+</CH.Code>

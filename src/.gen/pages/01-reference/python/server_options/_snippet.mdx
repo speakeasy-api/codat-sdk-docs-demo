@@ -1,0 +1,52 @@
+{/* Start Python Server Options */}
+
+### Select Server by Index
+
+You can override the default server globally by passing a server index to the `server_idx: int` optional parameter when initializing the SDK client instance. The selected server will then be used as the default on the operations that use it. This table lists the indexes associated with the available servers:
+
+
+
+#### Example
+
+```python
+import codatsynccommerce
+from codatsynccommerce.models import components
+
+s = codatsynccommerce.CodatSyncCommerce(
+    server_idx=0,
+    security=components.Security(
+        auth_header="Basic BASE_64_ENCODED(API_KEY)",
+    ),
+)
+
+
+res = s.sync_flow_settings.get_config_text_sync_flow()
+
+if res.localization_info is not None:
+    # handle response
+    pass
+```
+
+
+### Override Server URL Per-Client
+
+The default server can also be overridden globally by passing a URL to the `server_url: str` optional parameter when initializing the SDK client instance. For example:
+```python
+import codatsynccommerce
+from codatsynccommerce.models import components
+
+s = codatsynccommerce.CodatSyncCommerce(
+    server_url="https://api.codat.io",
+    security=components.Security(
+        auth_header="Basic BASE_64_ENCODED(API_KEY)",
+    ),
+)
+
+
+res = s.sync_flow_settings.get_config_text_sync_flow()
+
+if res.localization_info is not None:
+    # handle response
+    pass
+```
+{/* End Python Server Options */}

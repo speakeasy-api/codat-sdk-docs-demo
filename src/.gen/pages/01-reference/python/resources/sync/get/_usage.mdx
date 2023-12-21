@@ -1,0 +1,36 @@
+
+<CH.Code>
+```python Get.py
+import codatsynccommerce
+from codatsynccommerce.models import components, operations
+
+s = codatsynccommerce.CodatSyncCommerce(
+    security=components.Security(
+        auth_header="Basic BASE_64_ENCODED(API_KEY)",
+    ),
+)
+
+req = operations.GetSyncByIDRequest(
+    company_id='8a210b68-6988-11ed-a1eb-0242ac120002',
+    sync_id='6fb40d5e-b13e-11ed-afa1-0242ac120002',
+)
+
+res = s.sync.get(req)
+
+if res.company_sync_status is not None:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "string",
+    "correlationId": "string",
+    "detailedErrorCode": 568045,
+    "error": "string",
+    "service": "string",
+    "statusCode": 392785
+  }
+```
+</CH.Code>

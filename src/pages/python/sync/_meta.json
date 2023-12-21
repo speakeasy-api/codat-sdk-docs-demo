@@ -1,0 +1,9 @@
+{
+  "get": "Get",
+  "get_last_successful_sync": "Get Last Successful Sync",
+  "get_latest_sync": "Get Latest Sync",
+  "get_status": "Get Status",
+  "list": "List",
+  "request": "Request",
+  "request_for_date_range": "Request For Date Range"
+}

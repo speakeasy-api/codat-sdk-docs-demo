@@ -1,0 +1,76 @@
+{/* Start Go Server Options */}
+
+### Select Server by Index
+
+You can override the default server globally using the `WithServerIndex` option when initializing the SDK client instance. The selected server will then be used as the default on the operations that use it. This table lists the indexes associated with the available servers:
+
+
+
+#### Example
+
+```go
+package main
+
+import (
+	"context"
+	syncforcommerce "github.com/codatio/client-sdk-go/sync-for-commerce/v2"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/models/components"
+	"log"
+)
+
+func main() {
+	s := syncforcommerce.New(
+		syncforcommerce.WithServerIndex(0),
+		syncforcommerce.WithSecurity(components.Security{
+			AuthHeader: "Basic BASE_64_ENCODED(API_KEY)",
+		}),
+	)
+
+	ctx := context.Background()
+	res, err := s.SyncFlowSettings.GetConfigTextSyncFlow(ctx)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	if res.LocalizationInfo != nil {
+		// handle response
+	}
+}
+
+```
+
+
+### Override Server URL Per-Client
+
+The default server can also be overridden globally using the `WithServerURL` option when initializing the SDK client instance. For example:
+```go
+package main
+
+import (
+	"context"
+	syncforcommerce "github.com/codatio/client-sdk-go/sync-for-commerce/v2"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/models/components"
+	"log"
+)
+
+func main() {
+	s := syncforcommerce.New(
+		syncforcommerce.WithServerURL("https://api.codat.io"),
+		syncforcommerce.WithSecurity(components.Security{
+			AuthHeader: "Basic BASE_64_ENCODED(API_KEY)",
+		}),
+	)
+
+	ctx := context.Background()
+	res, err := s.SyncFlowSettings.GetConfigTextSyncFlow(ctx)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	if res.LocalizationInfo != nil {
+		// handle response
+	}
+}
+
+```
+{/* End Go Server Options */}

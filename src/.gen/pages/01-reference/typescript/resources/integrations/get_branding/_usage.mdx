@@ -1,0 +1,38 @@
+
+<CH.Code>
+```typescript GetBranding.ts
+import { CodatSyncCommerce } from "@codat/sync-for-commerce";
+
+async function run() {
+  const sdk = new CodatSyncCommerce({
+    security: {
+      authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+    },
+  });
+
+  const res = await sdk.integrations.getBranding({
+    platformKey: "gbol",
+  });
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "string",
+    "correlationId": "string",
+    "detailedErrorCode": 870013,
+    "error": "string",
+    "service": "string",
+    "statusCode": 870088
+  }
+```
+</CH.Code>

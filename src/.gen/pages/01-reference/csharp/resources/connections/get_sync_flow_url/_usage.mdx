@@ -1,0 +1,34 @@
+
+<CH.Code>
+```csharp GetSyncFlowUrl.cs
+using Codat.Sync.Commerce;
+using Codat.Sync.Commerce.Models.Components;
+using Codat.Sync.Commerce.Models.Requests;
+
+var sdk = new CodatSyncCommerce(
+    security: new Security() {
+        AuthHeader = "Basic BASE_64_ENCODED(API_KEY)",
+    });
+
+GetSyncFlowUrlRequest req = new GetSyncFlowUrlRequest() {
+    AccountingKey = "string",
+    CommerceKey = "string",
+};
+
+var res = await sdk.Connections.GetSyncFlowUrlAsync(req);
+
+// handle response
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "string",
+    "correlationId": "string",
+    "detailedErrorCode": 963663,
+    "error": "string",
+    "service": "string",
+    "statusCode": 272656
+  }
+```
+</CH.Code>

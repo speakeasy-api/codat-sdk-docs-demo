@@ -1,0 +1,89 @@
+{/* Start Go Retries */}
+Some of the endpoints in this SDK support retries.  If you use the SDK without any configuration, it will fall back to the default retry strategy provided by the API.  However, the default retry strategy can be overridden on a per-operation basis, or across the entire SDK.
+
+To change the default retry strategy for a single API call, simply provide a retryConfig object to the call:
+```go
+package main
+
+import (
+	"context"
+	syncforcommerce "github.com/codatio/client-sdk-go/sync-for-commerce/v2"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/internal/utils"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/models/components"
+	"log"
+	"models/operations"
+)
+
+func main() {
+	s := syncforcommerce.New(
+		syncforcommerce.WithSecurity(components.Security{
+			AuthHeader: "Basic BASE_64_ENCODED(API_KEY)",
+		}),
+	)
+
+	ctx := context.Background()
+	res, err := s.SyncFlowSettings.GetConfigTextSyncFlow(ctx, operations.WithRetries(
+		utils.RetryConfig{
+			Strategy: "backoff",
+			Backoff: &utils.BackoffStrategy{
+				InitialInterval: 1,
+				MaxInterval:     50,
+				Exponent:        1.1,
+				MaxElapsedTime:  100,
+			},
+			RetryConnectionErrors: false,
+		}))
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	if res.LocalizationInfo != nil {
+		// handle response
+	}
+}
+
+```
+
+If you'd like to override the default retry strategy for all operations that support retries, you can provide a retryConfig at SDK initialization:
+```go
+package main
+
+import (
+	"context"
+	syncforcommerce "github.com/codatio/client-sdk-go/sync-for-commerce/v2"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/internal/utils"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/models/components"
+	"log"
+)
+
+func main() {
+	s := syncforcommerce.New(
+		syncforcommerce.WithRetryConfig(
+			utils.RetryConfig{
+				Strategy: "backoff",
+				Backoff: &utils.BackoffStrategy{
+					InitialInterval: 1,
+					MaxInterval:     50,
+					Exponent:        1.1,
+					MaxElapsedTime:  100,
+				},
+				RetryConnectionErrors: false,
+			}),
+		syncforcommerce.WithSecurity(components.Security{
+			AuthHeader: "Basic BASE_64_ENCODED(API_KEY)",
+		}),
+	)
+
+	ctx := context.Background()
+	res, err := s.SyncFlowSettings.GetConfigTextSyncFlow(ctx)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	if res.LocalizationInfo != nil {
+		// handle response
+	}
+}
+
+```
+{/* End Go Retries */}

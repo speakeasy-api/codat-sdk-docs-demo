@@ -1,0 +1,41 @@
+
+<CH.Code>
+```typescript Request.ts
+import { CodatSyncCommerce } from "@codat/sync-for-commerce";
+
+async function run() {
+  const sdk = new CodatSyncCommerce({
+    security: {
+      authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+    },
+  });
+
+  const res = await sdk.sync.request({
+    syncToLatestArgs: {
+      syncTo: "2022-10-23T00:00:00Z",
+    },
+    companyId: "8a210b68-6988-11ed-a1eb-0242ac120002",
+  });
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "string",
+    "correlationId": "string",
+    "detailedErrorCode": 832620,
+    "error": "string",
+    "service": "string",
+    "statusCode": 957156
+  }
+```
+</CH.Code>

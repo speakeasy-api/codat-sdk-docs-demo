@@ -1,0 +1,39 @@
+
+<CH.Code>
+```typescript GetVisibleAccounts.ts
+import { CodatSyncCommerce } from "@codat/sync-for-commerce";
+
+async function run() {
+  const sdk = new CodatSyncCommerce({
+    security: {
+      authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+    },
+  });
+
+  const res = await sdk.syncFlowSettings.getVisibleAccounts({
+    clientId: "89bd9d8d-69a6-474e-8f46-7cc8796ed151",
+    platformKey: "gbol",
+  });
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "string",
+    "correlationId": "string",
+    "detailedErrorCode": 548814,
+    "error": "string",
+    "service": "string",
+    "statusCode": 592845
+  }
+```
+</CH.Code>

@@ -1,0 +1,7 @@
+{
+  "create": "Create",
+  "get_sync_flow_url": "Get Sync Flow Url",
+  "list": "List",
+  "update_authorization": "Update Authorization",
+  "update_connection": "Update Connection"
+}

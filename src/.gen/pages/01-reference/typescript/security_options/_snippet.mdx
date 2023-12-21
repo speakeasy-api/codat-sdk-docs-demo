@@ -1,0 +1,31 @@
+{/* Start Typescript Security Options */}
+### Per-Client Security Schemes
+
+This SDK supports the following security scheme globally:
+
+
+
+You can set the security parameters through the `security` optional parameter when initializing the SDK client instance. For example:
+```typescript
+import { CodatSyncCommerce } from "@codat/sync-for-commerce";
+
+async function run() {
+    const sdk = new CodatSyncCommerce({
+        security: {
+            authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+        },
+    });
+
+    const res = await sdk.syncFlowSettings.getConfigTextSyncFlow();
+
+    if (res?.statusCode !== 200) {
+        throw new Error("Unexpected status code: " + res?.statusCode || "-");
+    }
+
+    // handle response
+}
+
+run();
+
+```
+{/* End Typescript Security Options */}

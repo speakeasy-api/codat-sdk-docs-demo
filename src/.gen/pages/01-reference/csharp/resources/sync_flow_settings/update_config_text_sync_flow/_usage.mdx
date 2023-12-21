@@ -1,0 +1,32 @@
+
+<CH.Code>
+```csharp UpdateConfigTextSyncFlow.cs
+using Codat.Sync.Commerce;
+using Codat.Sync.Commerce.Models.Components;
+
+var sdk = new CodatSyncCommerce(
+    security: new Security() {
+        AuthHeader = "Basic BASE_64_ENCODED(API_KEY)",
+    });
+
+Dictionary<string, Localization> req = new Dictionary<string, Localization>() {
+    { "key", new Localization() {} },
+};
+
+var res = await sdk.SyncFlowSettings.UpdateConfigTextSyncFlowAsync(req);
+
+// handle response
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "string",
+    "correlationId": "string",
+    "detailedErrorCode": 715190,
+    "error": "string",
+    "service": "string",
+    "statusCode": 844266
+  }
+```
+</CH.Code>

@@ -1,0 +1,33 @@
+
+<CH.Code>
+```csharp List.cs
+using Codat.Sync.Commerce;
+using Codat.Sync.Commerce.Models.Components;
+using Codat.Sync.Commerce.Models.Requests;
+
+var sdk = new CodatSyncCommerce(
+    security: new Security() {
+        AuthHeader = "Basic BASE_64_ENCODED(API_KEY)",
+    });
+
+ListSyncsRequest req = new ListSyncsRequest() {
+    CompanyId = "8a210b68-6988-11ed-a1eb-0242ac120002",
+};
+
+var res = await sdk.Sync.ListAsync(req);
+
+// handle response
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "string",
+    "correlationId": "string",
+    "detailedErrorCode": 20218,
+    "error": "string",
+    "service": "string",
+    "statusCode": 368241
+  }
+```
+</CH.Code>

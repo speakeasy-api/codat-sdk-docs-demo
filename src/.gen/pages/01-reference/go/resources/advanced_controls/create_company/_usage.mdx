@@ -1,0 +1,46 @@
+
+<CH.Code>
+```go CreateCompany.go
+package main
+
+import(
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/models/components"
+	syncforcommerce "github.com/codatio/client-sdk-go/sync-for-commerce/v2"
+	"context"
+	"log"
+)
+
+func main() {
+    s := syncforcommerce.New(
+        syncforcommerce.WithSecurity(components.Security{
+            AuthHeader: "Basic BASE_64_ENCODED(API_KEY)",
+        }),
+    )
+
+    ctx := context.Background()
+    res, err := s.AdvancedControls.CreateCompany(ctx, &components.CreateCompany{
+        Description: syncforcommerce.String("Requested early access to the new financing scheme."),
+        Name: "Bank of Dave",
+    })
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.Company != nil {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "string",
+    "correlationId": "string",
+    "detailedErrorCode": 544883,
+    "error": "string",
+    "service": "string",
+    "statusCode": 847252
+  }
+```
+</CH.Code>

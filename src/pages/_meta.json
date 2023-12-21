@@ -1,28 +1,18 @@
 {
-  "-- guides": {
-    "title": "Guides",
-    "type": "separator"
+  "go": {
+    "type": "page",
+    "display": "hidden"
   },
-  "installation": {
-    "title": "Installation"
+  "python": {
+    "type": "page",
+    "display": "hidden"
   },
-  "-- resources": {
-    "title": "Resources",
-    "type": "separator"
+  "typescript": {
+    "type": "page",
+    "display": "hidden"
   },
-  "advanced_controls": {
-    "title": "Advanced Controls"
-  },
-  "connections": {
-    "title": "Connections"
-  },
-  "integrations": {
-    "title": "Integrations"
-  },
-  "sync": {
-    "title": "Sync"
-  },
-  "sync_flow_settings": {
-    "title": "Sync Flow Settings"
+  "csharp": {
+    "type": "page",
+    "display": "hidden"
   }
 }
