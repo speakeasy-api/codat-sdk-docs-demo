@@ -1,4 +1,9 @@
 configVersion: 1.0.0
+management:
+  docChecksum: 3456c4c108fa258a779d2d71ca4bcd68
+  docVersion: "1.1"
+  speakeasyVersion: 1.128.1
+  generationVersion: 2.223.0
 generation:
   comments: {}
   sdkClassName: CodatSyncCommerce
@@ -37,7 +42,7 @@ csharp:
   published: true
   sdkClassName: Codat.Sync.Commerce
 docs:
-  version: ""
+  version: 0.1.0
   imports:
     option: openapi
     paths:
