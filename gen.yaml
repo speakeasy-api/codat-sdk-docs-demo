@@ -25,7 +25,7 @@ csharp:
   packageName: Codat.Sync.Commerce
   sdkClassName: Codat.Sync.Commerce
 docs:
-  version: 0.1.0
+  version: 0.2.0
   imports:
     option: openapi
     paths:
