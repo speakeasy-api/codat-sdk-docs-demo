@@ -16,20 +16,23 @@ async function run() {
         },
     });
 
-    const res = await sdk.syncFlowSettings.getConfigTextSyncFlow().catch((err) => {
-        if (err instanceof errors.ErrorMessage) {
-            console.error(err); // handle exception
-            return null;
-        } else {
-            throw err;
+    let result;
+    try {
+        result = await sdk.syncFlowSettings.getConfigTextSyncFlow();
+    } catch (err) {
+        switch (true) {
+            case err instanceof errors.ErrorMessage: {
+                console.error(err); // handle exception
+                return;
+            }
+            default: {
+                throw err;
+            }
         }
-    });
-
-    if (res?.statusCode !== 200) {
-        throw new Error("Unexpected status code: " + res?.statusCode || "-");
     }
 
-    // handle response
+    // Handle the result
+    console.log(result);
 }
 
 run();

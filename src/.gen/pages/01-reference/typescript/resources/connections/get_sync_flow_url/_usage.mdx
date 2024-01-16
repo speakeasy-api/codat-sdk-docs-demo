@@ -10,16 +10,13 @@ async function run() {
     },
   });
 
-  const res = await sdk.connections.getSyncFlowUrl({
+  const result = await sdk.connections.getSyncFlowUrl({
     accountingKey: "string",
     commerceKey: "string",
   });
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

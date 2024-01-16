@@ -3,15 +3,54 @@
 
 ### Select Server by Index
 
-You can override the default server globally by passing a server index to the `serverIdx: number` optional parameter when initializing the SDK client instance. The selected server will then be used as the default on the operations that use it. This table lists the indexes associated with the available servers:
+You can override the default server globally by passing a server index to the `serverIdx` optional parameter when initializing the SDK client instance. The selected server will then be used as the default on the operations that use it. This table lists the indexes associated with the available servers:
 
 
 
+```typescript
+import { CodatSyncCommerce } from "@codat/sync-for-commerce";
 
+async function run() {
+    const sdk = new CodatSyncCommerce({
+        serverIdx: 0,
+        security: {
+            authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+        },
+    });
+
+    const result = await sdk.syncFlowSettings.getConfigTextSyncFlow();
+
+    // Handle the result
+    console.log(result);
+}
+
+run();
+
+```
 
 
 ### Override Server URL Per-Client
 
-The default server can also be overridden globally by passing a URL to the `serverURL: str` optional parameter when initializing the SDK client instance. For example:
+The default server can also be overridden globally by passing a URL to the `serverURL` optional parameter when initializing the SDK client instance. For example:
 
+```typescript
+import { CodatSyncCommerce } from "@codat/sync-for-commerce";
+
+async function run() {
+    const sdk = new CodatSyncCommerce({
+        serverURL: "https://api.codat.io",
+        security: {
+            authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+        },
+    });
+
+    const result = await sdk.syncFlowSettings.getConfigTextSyncFlow();
+
+    // Handle the result
+    console.log(result);
+}
+
+run();
+
+```
 {/* End Typescript Server Options */}

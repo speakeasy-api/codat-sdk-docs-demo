@@ -10,15 +10,12 @@ async function run() {
     },
   });
 
-  const res = await sdk.advancedControls.getConfiguration({
+  const result = await sdk.advancedControls.getConfiguration({
     companyId: "8a210b68-6988-11ed-a1eb-0242ac120002",
   });
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

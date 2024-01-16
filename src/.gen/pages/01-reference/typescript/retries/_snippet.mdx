@@ -6,31 +6,31 @@ To change the default retry strategy for a single API call, simply provide a ret
 import { CodatSyncCommerce } from "@codat/sync-for-commerce";
 
 async function run() {
-  const sdk = new CodatSyncCommerce({
-    security: {
-      authHeader: "Basic BASE_64_ENCODED(API_KEY)",
-    },
-  });
+    const sdk = new CodatSyncCommerce({
+        security: {
+            authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+        },
+    });
 
-  const res = await sdk.syncFlowSettings.getConfigTextSyncFlow(, {
-    strategy: "backoff",
-    backoff: {
-      initialInterval: 1,
-      maxInterval: 50,
-      exponent: 1.1,
-      maxElapsedTime: 100,
-    },
-    retryConnectionErrors: false,
-  });
+    const result = await sdk.syncFlowSettings.getConfigTextSyncFlow({
+        retries: {
+            strategy: "backoff",
+            backoff: {
+                initialInterval: 1,
+                maxInterval: 50,
+                exponent: 1.1,
+                maxElapsedTime: 100,
+            },
+            retryConnectionErrors: false,
+        },
+    });
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+    // Handle the result
+    console.log(result);
 }
 
 run();
+
 ```
 
 If you'd like to override the default retry strategy for all operations that support retries, you can provide a retryConfig at SDK initialization:
@@ -39,7 +39,7 @@ import { CodatSyncCommerce } from "@codat/sync-for-commerce";
 
 async function run() {
     const sdk = new CodatSyncCommerce({
-        retry_config: {
+        retryConfig: {
             strategy: "backoff",
             backoff: {
                 initialInterval: 1,
@@ -54,13 +54,10 @@ async function run() {
         },
     });
 
-    const res = await sdk.syncFlowSettings.getConfigTextSyncFlow();
+    const result = await sdk.syncFlowSettings.getConfigTextSyncFlow();
 
-    if (res?.statusCode !== 200) {
-        throw new Error("Unexpected status code: " + res?.statusCode || "-");
-    }
-
-    // handle response
+    // Handle the result
+    console.log(result);
 }
 
 run();
