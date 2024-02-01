@@ -5,10 +5,7 @@ using Codat.Sync.Commerce;
 using Codat.Sync.Commerce.Models.Components;
 using Codat.Sync.Commerce.Models.Requests;
 
-var sdk = new CodatSyncCommerce(
-    security: new Security() {
-        AuthHeader = "Basic BASE_64_ENCODED(API_KEY)",
-    });
+var sdk = new CodatSyncCommerce(authHeader: "Basic BASE_64_ENCODED(API_KEY)");
 
 GetVisibleAccountsRequest req = new GetVisibleAccountsRequest() {
     ClientId = "89bd9d8d-69a6-474e-8f46-7cc8796ed151",
