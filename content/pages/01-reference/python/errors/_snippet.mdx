@@ -7,7 +7,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 
 ```python
 import codatsynccommerce
-from codatsynccommerce.models import components
+from codatsynccommerce.models import components, errors
 
 s = codatsynccommerce.CodatSyncCommerce(
     security=components.Security(
@@ -20,10 +20,10 @@ res = None
 try:
     res = s.sync_flow_settings.get_config_text_sync_flow()
 except errors.ErrorMessage as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 except errors.SDKError as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 
 if res.localization_info is not None:

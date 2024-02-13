@@ -8,9 +8,6 @@ using Codat.Sync.Commerce.Models.Requests;
 var sdk = new CodatSyncCommerce(authHeader: "Basic BASE_64_ENCODED(API_KEY)");
 
 CreateConnectionRequest req = new CreateConnectionRequest() {
-    RequestBody = new CreateConnectionRequestBody() {
-        PlatformKey = "gbol",
-    },
     CompanyId = "8a210b68-6988-11ed-a1eb-0242ac120002",
 };
 
@@ -22,12 +19,12 @@ var res = await sdk.Connections.CreateAsync(req);
 
 ```json Example Response
   {
-    "canBeRetried": "string",
-    "correlationId": "string",
-    "detailedErrorCode": 891773,
-    "error": "string",
-    "service": "string",
-    "statusCode": 56713
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
   }
 ```
 </CH.Code>

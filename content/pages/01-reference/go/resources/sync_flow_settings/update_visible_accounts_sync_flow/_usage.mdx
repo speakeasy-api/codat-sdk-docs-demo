@@ -20,11 +20,6 @@ func main() {
 
     ctx := context.Background()
     res, err := s.SyncFlowSettings.UpdateVisibleAccountsSyncFlow(ctx, operations.UpdateVisibleAccountsSyncFlowRequest{
-        VisibleAccounts: &components.VisibleAccounts{
-            VisibleAccounts: []string{
-                "string",
-            },
-        },
         PlatformKey: "gbol",
     })
     if err != nil {
@@ -40,12 +35,12 @@ func main() {
 
 ```json Example Response
   {
-    "canBeRetried": "string",
-    "correlationId": "string",
-    "detailedErrorCode": 602763,
-    "error": "string",
-    "service": "string",
-    "statusCode": 857946
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
   }
 ```
 </CH.Code>

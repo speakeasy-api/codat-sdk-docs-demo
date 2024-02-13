@@ -11,7 +11,6 @@ s = codatsynccommerce.CodatSyncCommerce(
 )
 
 req = operations.UpdateConnectionRequest(
-    update_connection=components.UpdateConnection(),
     company_id='8a210b68-6988-11ed-a1eb-0242ac120002',
     connection_id='2e9d2c44-f675-40ba-8049-353bfcb5e171',
 )
@@ -26,12 +25,12 @@ if res.connection is not None:
 
 ```json Example Response
   {
-    "canBeRetried": "string",
-    "correlationId": "string",
-    "detailedErrorCode": 528895,
-    "error": "string",
-    "service": "string",
-    "statusCode": 479977
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
   }
 ```
 </CH.Code>

@@ -20,9 +20,6 @@ func main() {
 
     ctx := context.Background()
     res, err := s.Connections.Create(ctx, operations.CreateConnectionRequest{
-        RequestBody: &operations.CreateConnectionRequestBody{
-            PlatformKey: syncforcommerce.String("gbol"),
-        },
         CompanyID: "8a210b68-6988-11ed-a1eb-0242ac120002",
     })
     if err != nil {
@@ -38,12 +35,12 @@ func main() {
 
 ```json Example Response
   {
-    "canBeRetried": "string",
-    "correlationId": "string",
-    "detailedErrorCode": 891773,
-    "error": "string",
-    "service": "string",
-    "statusCode": 56713
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
   }
 ```
 </CH.Code>

@@ -9,11 +9,6 @@ using System.Collections.Generic;
 var sdk = new CodatSyncCommerce(authHeader: "Basic BASE_64_ENCODED(API_KEY)");
 
 UpdateVisibleAccountsSyncFlowRequest req = new UpdateVisibleAccountsSyncFlowRequest() {
-    VisibleAccounts = new VisibleAccounts() {
-        VisibleAccounts = new List<string>() {
-            "string",
-        },
-    },
     PlatformKey = "gbol",
 };
 
@@ -25,12 +20,12 @@ var res = await sdk.SyncFlowSettings.UpdateVisibleAccountsSyncFlowAsync(req);
 
 ```json Example Response
   {
-    "canBeRetried": "string",
-    "correlationId": "string",
-    "detailedErrorCode": 602763,
-    "error": "string",
-    "service": "string",
-    "statusCode": 857946
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
   }
 ```
 </CH.Code>

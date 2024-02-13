@@ -5,6 +5,8 @@ generation:
     optionalPropertyRendering: withExample
   fixes:
     nameResolutionDec2023: false
+    parameterOrderingFeb2024: false
+    requestResponseComponentNamesFeb2024: false
   telemetryEnabled: true
 csharp:
   version: 2.2.0
@@ -26,7 +28,9 @@ csharp:
   packageName: Codat.Sync.Commerce
   sdkClassName: Codat.Sync.Commerce
 docs:
-  version: 0.4.0
+  version: 0.5.0
+  docsLanguages:
+    - go
   imports:
     option: openapi
     paths:

@@ -11,12 +11,6 @@ s = codatsynccommerce.CodatSyncCommerce(
 )
 
 req = operations.RequestSyncForDateRangeRequest(
-    sync_range=components.SyncRange(
-        date_range=components.DateRange(
-            finish='2022-10-23T00:00:00Z',
-            start='2022-10-23T00:00:00Z',
-        ),
-    ),
     company_id='8a210b68-6988-11ed-a1eb-0242ac120002',
 )
 
@@ -30,12 +24,12 @@ if res.sync_summary is not None:
 
 ```json Example Response
   {
-    "canBeRetried": "string",
-    "correlationId": "string",
-    "detailedErrorCode": 778157,
-    "error": "string",
-    "service": "string",
-    "statusCode": 140350
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
   }
 ```
 </CH.Code>

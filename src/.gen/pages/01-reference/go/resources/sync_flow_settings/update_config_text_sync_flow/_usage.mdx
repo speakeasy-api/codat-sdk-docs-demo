@@ -18,7 +18,7 @@ func main() {
     )
 
     ctx := context.Background()
-    res, err := s.SyncFlowSettings.UpdateConfigTextSyncFlow(ctx, &map[string]components.Localization{
+    res, err := s.SyncFlowSettings.UpdateConfigTextSyncFlow(ctx, map[string]components.Localization{
         "key": components.Localization{},
     })
     if err != nil {
@@ -34,12 +34,12 @@ func main() {
 
 ```json Example Response
   {
-    "canBeRetried": "string",
-    "correlationId": "string",
-    "detailedErrorCode": 715190,
-    "error": "string",
-    "service": "string",
-    "statusCode": 844266
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
   }
 ```
 </CH.Code>
