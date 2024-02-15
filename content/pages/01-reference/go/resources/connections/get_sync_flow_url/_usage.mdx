@@ -20,8 +20,8 @@ func main() {
 
     ctx := context.Background()
     res, err := s.Connections.GetSyncFlowURL(ctx, operations.GetSyncFlowURLRequest{
-        AccountingKey: "string",
-        CommerceKey: "string",
+        AccountingKey: "<value>",
+        CommerceKey: "<value>",
     })
     if err != nil {
         log.Fatal(err)

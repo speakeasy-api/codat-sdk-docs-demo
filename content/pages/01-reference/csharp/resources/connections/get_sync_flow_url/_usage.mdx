@@ -8,8 +8,8 @@ using Codat.Sync.Commerce.Models.Requests;
 var sdk = new CodatSyncCommerce(authHeader: "Basic BASE_64_ENCODED(API_KEY)");
 
 GetSyncFlowUrlRequest req = new GetSyncFlowUrlRequest() {
-    AccountingKey = "string",
-    CommerceKey = "string",
+    AccountingKey = "<value>",
+    CommerceKey = "<value>",
 };
 
 var res = await sdk.Connections.GetSyncFlowUrlAsync(req);
