@@ -6,7 +6,7 @@ using Codat.Sync.Commerce.Models.Components;
 using Codat.Sync.Commerce.Models.Requests;
 using System.Collections.Generic;
 
-var sdk = new CodatSyncCommerce(authHeader: "Basic BASE_64_ENCODED(API_KEY)");
+var sdk = new CodatSyncCommerce(AuthHeader: "Basic BASE_64_ENCODED(API_KEY)");
 
 UpdateVisibleAccountsSyncFlowRequest req = new UpdateVisibleAccountsSyncFlowRequest() {
     PlatformKey = "gbol",

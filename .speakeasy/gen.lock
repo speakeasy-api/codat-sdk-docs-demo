@@ -4,7 +4,7 @@ management:
   docChecksum: 3456c4c108fa258a779d2d71ca4bcd68
   docVersion: "1.1"
   speakeasyVersion: internal
-  generationVersion: 2.258.0
+  generationVersion: 2.262.2
   releaseVersion: 0.5.1
   configChecksum: e430b9f6b93d931739430b89adca7d62
   installationURL: codat-sync-for-commerce

@@ -5,7 +5,7 @@ using Codat.Sync.Commerce;
 using Codat.Sync.Commerce.Models.Components;
 using Codat.Sync.Commerce.Models.Requests;
 
-var sdk = new CodatSyncCommerce(authHeader: "Basic BASE_64_ENCODED(API_KEY)");
+var sdk = new CodatSyncCommerce(AuthHeader: "Basic BASE_64_ENCODED(API_KEY)");
 
 RequestSyncForDateRangeRequest req = new RequestSyncForDateRangeRequest() {
     CompanyId = "8a210b68-6988-11ed-a1eb-0242ac120002",
