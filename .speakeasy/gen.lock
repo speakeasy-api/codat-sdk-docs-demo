@@ -4,9 +4,9 @@ management:
   docChecksum: 3456c4c108fa258a779d2d71ca4bcd68
   docVersion: "1.1"
   speakeasyVersion: internal
-  generationVersion: 2.262.2
-  releaseVersion: 0.5.1
-  configChecksum: e430b9f6b93d931739430b89adca7d62
+  generationVersion: 2.269.0
+  releaseVersion: 0.5.2
+  configChecksum: 5f545c00db3467c2d939668032aa34db
   installationURL: codat-sync-for-commerce
   published: true
 features:
@@ -623,6 +623,7 @@ generatedFiles:
   - content/types/models/components/hal_ref/go.mdx
   - content/types/models/components/hal_ref/python.mdx
   - content/types/models/components/hal_ref/typescript.mdx
+  - content/types/models/components/http_metadata/typescript.mdx
   - content/types/models/components/image_reference/csharp.mdx
   - content/types/models/components/image_reference/go.mdx
   - content/types/models/components/image_reference/python.mdx

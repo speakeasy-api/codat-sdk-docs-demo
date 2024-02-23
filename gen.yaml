@@ -28,7 +28,7 @@ csharp:
   packageName: Codat.Sync.Commerce
   sdkClassName: Codat.Sync.Commerce
 docs:
-  version: 0.5.1
+  version: 0.5.2
   docsLanguages:
     - go
   imports:
@@ -45,6 +45,7 @@ docs:
   static: true
 go:
   version: 2.2.0
+  additionalDependencies: {}
   clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: false
   imports:
@@ -79,6 +80,10 @@ python:
   packageName: codat-sync-for-commerce
 typescript:
   version: 2.2.0
+  additionalDependencies:
+    dependencies: {}
+    devDependencies: {}
+    peerDependencies: {}
   author: Codat
   clientServerStatusCodesAsErrors: true
   description: Push merchants' data from your ecommerce or point-of-sale (POS) platform into your merchants' accounting platform.
@@ -95,4 +100,5 @@ typescript:
   maxMethodParams: 0
   outputModelSuffix: output
   packageName: '@codat/sync-for-commerce'
+  responseFormat: envelope-http
   templateVersion: v2
