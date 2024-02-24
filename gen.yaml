@@ -7,6 +7,8 @@ generation:
     nameResolutionDec2023: false
     parameterOrderingFeb2024: false
     requestResponseComponentNamesFeb2024: false
+  auth:
+    oAuth2ClientCredentialsEnabled: false
   telemetryEnabled: true
 csharp:
   version: 2.2.0
@@ -28,7 +30,7 @@ csharp:
   packageName: Codat.Sync.Commerce
   sdkClassName: Codat.Sync.Commerce
 docs:
-  version: 0.5.2
+  version: 0.5.3
   docsLanguages:
     - go
   imports:
