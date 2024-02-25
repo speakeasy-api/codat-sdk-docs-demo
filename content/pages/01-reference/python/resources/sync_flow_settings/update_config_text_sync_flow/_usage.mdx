@@ -1,0 +1,35 @@
+
+<CH.Code>
+```python UpdateConfigTextSyncFlow.py
+import codatsynccommerce
+from codatsynccommerce.models import components
+
+s = codatsynccommerce.CodatSyncCommerce(
+    security=components.Security(
+        auth_header="Basic BASE_64_ENCODED(API_KEY)",
+    ),
+)
+
+req = {
+    'key': components.Localization(),
+}
+
+res = s.sync_flow_settings.update_config_text_sync_flow(req)
+
+if res.localization_info is not None:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
+  }
+```
+</CH.Code>
