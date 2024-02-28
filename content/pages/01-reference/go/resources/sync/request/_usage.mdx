@@ -1,0 +1,46 @@
+
+<CH.Code>
+```go Request.go
+package main
+
+import(
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/models/components"
+	syncforcommerce "github.com/codatio/client-sdk-go/sync-for-commerce/v2"
+	"context"
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/models/operations"
+	"log"
+)
+
+func main() {
+    s := syncforcommerce.New(
+        syncforcommerce.WithSecurity(components.Security{
+            AuthHeader: "Basic BASE_64_ENCODED(API_KEY)",
+        }),
+    )
+
+    ctx := context.Background()
+    res, err := s.Sync.Request(ctx, operations.RequestSyncRequest{
+        CompanyID: "8a210b68-6988-11ed-a1eb-0242ac120002",
+    })
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.SyncSummary != nil {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
+  }
+```
+</CH.Code>

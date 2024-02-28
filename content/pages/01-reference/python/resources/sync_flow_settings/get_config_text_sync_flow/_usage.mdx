@@ -1,0 +1,25 @@
+
+<CH.Code>
+```python GetConfigTextSyncFlow.py
+import codatsynccommerce
+from codatsynccommerce.models import components
+
+s = codatsynccommerce.CodatSyncCommerce(
+    security=components.Security(
+        auth_header="Basic BASE_64_ENCODED(API_KEY)",
+    ),
+)
+
+
+res = s.sync_flow_settings.get_config_text_sync_flow()
+
+if res.localization_info is not None:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {}
+```
+</CH.Code>
