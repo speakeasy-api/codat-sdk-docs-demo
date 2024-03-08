@@ -4,14 +4,14 @@ management:
   docChecksum: 3456c4c108fa258a779d2d71ca4bcd68
   docVersion: "1.1"
   speakeasyVersion: internal
-  generationVersion: 2.275.4
-  releaseVersion: 0.6.0
-  configChecksum: a1e16d5a862211af372c5cf39d3ef501
+  generationVersion: 2.279.1
+  releaseVersion: 0.6.1
+  configChecksum: 2befe7cff78d5c972cecf001fdb5cf25
   installationURL: codat-sync-for-commerce
   published: true
 features:
   docs:
-    constsAndDefaults: 0.1.0
+    constsAndDefaults: 0.1.1
     core: 1.26.3
     deprecations: 0.1.0
     examples: 0.1.1
@@ -624,6 +624,8 @@ generatedFiles:
   - content/types/models/components/hal_ref/go.mdx
   - content/types/models/components/hal_ref/python.mdx
   - content/types/models/components/hal_ref/typescript.mdx
+  - content/types/models/components/http_metadata/go.mdx
+  - content/types/models/components/http_metadata/python.mdx
   - content/types/models/components/http_metadata/typescript.mdx
   - content/types/models/components/image_reference/csharp.mdx
   - content/types/models/components/image_reference/go.mdx

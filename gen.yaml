@@ -30,7 +30,7 @@ csharp:
   packageName: Codat.Sync.Commerce
   sdkClassName: Codat.Sync.Commerce
 docs:
-  version: 0.6.0
+  version: 0.6.1
   docsLanguages:
     - go
   imports:
@@ -62,6 +62,7 @@ go:
   maxMethodParams: 0
   outputModelSuffix: output
   packageName: github.com/codatio/client-sdk-go/sync-for-commerce
+  responseFormat: envelope-http
 python:
   version: 3.0.0
   additionalDependencies:
@@ -84,6 +85,7 @@ python:
   maxMethodParams: 0
   outputModelSuffix: output
   packageName: codat-sync-for-commerce
+  responseFormat: envelope-http
 typescript:
   version: 2.2.0
   additionalDependencies:

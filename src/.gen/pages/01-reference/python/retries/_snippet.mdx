@@ -20,6 +20,7 @@ res = s.sync_flow_settings.get_config_text_sync_flow(,
 if res.localization_info is not None:
     # handle response
     pass
+
 ```
 
 If you'd like to override the default retry strategy for all operations that support retries, you can use the `retry_config` optional parameter when initializing the SDK:
@@ -41,5 +42,6 @@ res = s.sync_flow_settings.get_config_text_sync_flow()
 if res.localization_info is not None:
     # handle response
     pass
+
 ```
 {/* End Python Retries */}
