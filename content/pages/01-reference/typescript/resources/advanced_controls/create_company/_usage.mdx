@@ -1,0 +1,36 @@
+
+<CH.Code>
+```typescript CreateCompany.ts
+import { CodatSyncCommerce } from "@codat/sync-for-commerce";
+
+async function run() {
+  const sdk = new CodatSyncCommerce({
+    security: {
+      authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+    },
+  });
+
+  const result = await sdk.advancedControls.createCompany({
+    description: "Requested early access to the new financing scheme.",
+    name: "Bank of Dave",
+  });
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
+  }
+```
+</CH.Code>
