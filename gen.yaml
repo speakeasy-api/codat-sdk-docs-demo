@@ -30,7 +30,7 @@ csharp:
   packageName: Codat.Sync.Commerce
   sdkClassName: Codat.Sync.Commerce
 docs:
-  version: 0.6.1
+  version: 0.6.2
   docsLanguages:
     - go
   imports:
