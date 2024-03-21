@@ -1,0 +1,36 @@
+
+<CH.Code>
+```typescript GetVisibleAccounts.ts
+import { CodatSyncCommerce } from "@codat/sync-for-commerce";
+
+async function run() {
+  const sdk = new CodatSyncCommerce({
+    security: {
+      authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+    },
+  });
+
+  const result = await sdk.syncFlowSettings.getVisibleAccounts({
+    clientId: "89bd9d8d-69a6-474e-8f46-7cc8796ed151",
+    platformKey: "gbol",
+  });
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
+  }
+```
+</CH.Code>
