@@ -13,6 +13,7 @@ generation:
 csharp:
   version: 2.2.0
   author: Codat
+  company: ""
   description: Push merchants' data from your ecommerce or point-of-sale (POS) platform into your merchants' accounting platform.
   dotnetVersion: net6.0
   flattenGlobalSecurity: true
@@ -28,9 +29,10 @@ csharp:
   maxMethodParams: 0
   outputModelSuffix: output
   packageName: Codat.Sync.Commerce
+  product: ""
   sdkClassName: Codat.Sync.Commerce
 docs:
-  version: 0.6.2
+  version: 0.6.3
   docsLanguages:
     - go
   imports:
