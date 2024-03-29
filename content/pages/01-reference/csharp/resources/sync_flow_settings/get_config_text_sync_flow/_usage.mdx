@@ -1,0 +1,18 @@
+
+<CH.Code>
+```csharp GetConfigTextSyncFlow.cs
+using CodatSyncCommerce;
+using CodatSyncCommerce.Models.Components;
+
+var sdk = new CodatSyncCommerceSDK(AuthHeader: "Basic BASE_64_ENCODED(API_KEY)");
+
+var res = await sdk.SyncFlowSettings.GetConfigTextSyncFlowAsync();
+
+// handle response
+```
+---
+
+```json Example Response
+  {}
+```
+</CH.Code>

@@ -1,0 +1,31 @@
+
+<CH.Code>
+```csharp UpdateVisibleAccountsSyncFlow.cs
+using CodatSyncCommerce;
+using CodatSyncCommerce.Models.Components;
+using CodatSyncCommerce.Models.Requests;
+using System.Collections.Generic;
+
+var sdk = new CodatSyncCommerceSDK(AuthHeader: "Basic BASE_64_ENCODED(API_KEY)");
+
+UpdateVisibleAccountsSyncFlowRequest req = new UpdateVisibleAccountsSyncFlowRequest() {
+    PlatformKey = "gbol",
+};
+
+var res = await sdk.SyncFlowSettings.UpdateVisibleAccountsSyncFlowAsync(req);
+
+// handle response
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
+  }
+```
+</CH.Code>

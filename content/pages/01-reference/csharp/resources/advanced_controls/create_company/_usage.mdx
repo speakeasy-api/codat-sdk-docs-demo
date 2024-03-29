@@ -1,0 +1,30 @@
+
+<CH.Code>
+```csharp CreateCompany.cs
+using CodatSyncCommerce;
+using CodatSyncCommerce.Models.Components;
+
+var sdk = new CodatSyncCommerceSDK(AuthHeader: "Basic BASE_64_ENCODED(API_KEY)");
+
+CreateCompany req = new CreateCompany() {
+    Description = "Requested early access to the new financing scheme.",
+    Name = "Bank of Dave",
+};
+
+var res = await sdk.AdvancedControls.CreateCompanyAsync(req);
+
+// handle response
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
+  }
+```
+</CH.Code>
