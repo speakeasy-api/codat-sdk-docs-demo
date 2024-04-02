@@ -4,9 +4,9 @@ management:
   docChecksum: 3456c4c108fa258a779d2d71ca4bcd68
   docVersion: "1.1"
   speakeasyVersion: internal
-  generationVersion: 2.292.0
-  releaseVersion: 0.6.3
-  configChecksum: 7de1e53328d33d9e7d79a4e4ed95d2c6
+  generationVersion: 2.295.1
+  releaseVersion: 0.6.4
+  configChecksum: 0bc2d2ecf2bdffe4237dabab990d6141
   installationURL: codat-sync-for-commerce
   published: true
 features:
@@ -591,7 +591,6 @@ generatedFiles:
   - content/types/models/components/date_range/go.mdx
   - content/types/models/components/date_range/python.mdx
   - content/types/models/components/date_range/typescript.mdx
-  - content/types/models/components/error_message/csharp.mdx
   - content/types/models/components/feature_state/csharp.mdx
   - content/types/models/components/feature_state/go.mdx
   - content/types/models/components/feature_state/python.mdx
@@ -736,6 +735,7 @@ generatedFiles:
   - content/types/models/components/visible_accounts/go.mdx
   - content/types/models/components/visible_accounts/python.mdx
   - content/types/models/components/visible_accounts/typescript.mdx
+  - content/types/models/errors/error_message/csharp.mdx
   - content/types/models/errors/error_message/python.mdx
   - content/types/models/errors/error_message/typescript.mdx
   - content/types/models/operations/create_company_response/go.mdx
