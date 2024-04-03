@@ -4,9 +4,9 @@ management:
   docChecksum: 3456c4c108fa258a779d2d71ca4bcd68
   docVersion: "1.1"
   speakeasyVersion: internal
-  generationVersion: 2.295.1
-  releaseVersion: 0.6.4
-  configChecksum: 0bc2d2ecf2bdffe4237dabab990d6141
+  generationVersion: 2.298.0
+  releaseVersion: 0.6.5
+  configChecksum: 3439f5d9d9037bb07044e4cf299a8064
   installationURL: codat-sync-for-commerce
   published: true
 features:
@@ -18,7 +18,7 @@ features:
     flattening: 0.1.0
     globalSecurity: 0.1.4
     globalServerURLs: 0.1.1
-    nameOverrides: 0.1.0
+    nameOverrides: 0.1.1
     retries: 0.1.0
     webhooks: 1.0.0
 generatedFiles:

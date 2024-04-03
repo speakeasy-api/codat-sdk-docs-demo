@@ -33,7 +33,7 @@ csharp:
   product: ""
   sdkClassName: Codat.Sync.Commerce
 docs:
-  version: 0.6.4
+  version: 0.6.5
   docsLanguages:
     - go
   imports:
@@ -88,6 +88,7 @@ python:
   maxMethodParams: 0
   outputModelSuffix: output
   packageName: codat-sync-for-commerce
+  projectUrls: {}
   responseFormat: envelope-http
 typescript:
   version: 2.2.0
