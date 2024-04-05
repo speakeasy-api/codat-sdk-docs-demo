@@ -1,0 +1,35 @@
+
+<CH.Code>
+```go GetConfigTextSyncFlow.go
+package main
+
+import(
+	"github.com/codatio/client-sdk-go/sync-for-commerce/v2/models/components"
+	syncforcommerce "github.com/codatio/client-sdk-go/sync-for-commerce/v2"
+	"context"
+	"log"
+)
+
+func main() {
+    s := syncforcommerce.New(
+        syncforcommerce.WithSecurity(components.Security{
+            AuthHeader: "Basic BASE_64_ENCODED(API_KEY)",
+        }),
+    )
+
+    ctx := context.Background()
+    res, err := s.SyncFlowSettings.GetConfigTextSyncFlow(ctx)
+    if err != nil {
+        log.Fatal(err)
+    }
+    if res.LocalizationInfo != nil {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {}
+```
+</CH.Code>
