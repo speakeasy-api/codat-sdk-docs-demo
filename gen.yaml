@@ -32,9 +32,10 @@ csharp:
   outputModelSuffix: output
   packageName: Codat.Sync.Commerce
   product: ""
+  responseFormat: envelope-http
   sdkClassName: Codat.Sync.Commerce
 docs:
-  version: 0.6.6
+  version: 0.6.7
   docsLanguages:
     - go
   imports:
@@ -100,6 +101,7 @@ typescript:
   author: Codat
   clientServerStatusCodesAsErrors: true
   description: Push merchants' data from your ecommerce or point-of-sale (POS) platform into your merchants' accounting platform.
+  enumFormat: enum
   flattenGlobalSecurity: false
   imports:
     option: openapi
