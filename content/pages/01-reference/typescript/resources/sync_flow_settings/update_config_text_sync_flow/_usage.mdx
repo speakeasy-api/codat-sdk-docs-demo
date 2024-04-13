@@ -1,0 +1,35 @@
+
+<CH.Code>
+```typescript UpdateConfigTextSyncFlow.ts
+import { CodatSyncCommerce } from "@codat/sync-for-commerce";
+
+const codatSyncCommerce = new CodatSyncCommerce({
+  security: {
+    authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+  },
+});
+
+async function run() {
+  const result = await codatSyncCommerce.syncFlowSettings.updateConfigTextSyncFlow({
+    "key": {},
+  });
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
+  }
+```
+</CH.Code>

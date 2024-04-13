@@ -1,0 +1,32 @@
+
+<CH.Code>
+```csharp List.cs
+using Codat.Sync.Commerce;
+using Codat.Sync.Commerce.Models.Components;
+using Codat.Sync.Commerce.Models.Requests;
+
+var sdk = new CodatSyncCommerce(AuthHeader: "Basic BASE_64_ENCODED(API_KEY)");
+
+ListIntegrationsRequest req = new ListIntegrationsRequest() {
+    OrderBy = "-modifiedDate",
+    Page = 1,
+    PageSize = 100,
+};
+
+var res = await sdk.Integrations.ListAsync(req);
+
+// handle response
+```
+---
+
+```json Example Response
+  {
+    "canBeRetried": "None",
+    "correlationId": "None",
+    "detailedErrorCode": 0,
+    "error": "None",
+    "service": "None",
+    "statusCode": 0
+  }
+```
+</CH.Code>
