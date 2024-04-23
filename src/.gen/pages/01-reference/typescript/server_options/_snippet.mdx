@@ -10,15 +10,15 @@ You can override the default server globally by passing a server index to the `s
 ```typescript
 import { CodatSyncCommerce } from "@codat/sync-for-commerce";
 
-async function run() {
-    const sdk = new CodatSyncCommerce({
-        serverIdx: 0,
-        security: {
-            authHeader: "Basic BASE_64_ENCODED(API_KEY)",
-        },
-    });
+const codatSyncCommerce = new CodatSyncCommerce({
+    serverIdx: 0,
+    security: {
+        authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+    },
+});
 
-    const result = await sdk.syncFlowSettings.getConfigTextSyncFlow();
+async function run() {
+    const result = await codatSyncCommerce.syncFlowSettings.getConfigTextSyncFlow();
 
     // Handle the result
     console.log(result);
@@ -36,15 +36,15 @@ The default server can also be overridden globally by passing a URL to the `serv
 ```typescript
 import { CodatSyncCommerce } from "@codat/sync-for-commerce";
 
-async function run() {
-    const sdk = new CodatSyncCommerce({
-        serverURL: "https://api.codat.io",
-        security: {
-            authHeader: "Basic BASE_64_ENCODED(API_KEY)",
-        },
-    });
+const codatSyncCommerce = new CodatSyncCommerce({
+    serverURL: "https://api.codat.io",
+    security: {
+        authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+    },
+});
 
-    const result = await sdk.syncFlowSettings.getConfigTextSyncFlow();
+async function run() {
+    const result = await codatSyncCommerce.syncFlowSettings.getConfigTextSyncFlow();
 
     // Handle the result
     console.log(result);
