@@ -5,14 +5,14 @@ To change the default retry strategy for a single API call, simply provide a ret
 ```typescript
 import { CodatSyncCommerce } from "@codat/sync-for-commerce";
 
-async function run() {
-    const sdk = new CodatSyncCommerce({
-        security: {
-            authHeader: "Basic BASE_64_ENCODED(API_KEY)",
-        },
-    });
+const codatSyncCommerce = new CodatSyncCommerce({
+    security: {
+        authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+    },
+});
 
-    const result = await sdk.syncFlowSettings.getConfigTextSyncFlow({
+async function run() {
+    const result = await codatSyncCommerce.syncFlowSettings.getConfigTextSyncFlow({
         retries: {
             strategy: "backoff",
             backoff: {
@@ -37,24 +37,24 @@ If you'd like to override the default retry strategy for all operations that sup
 ```typescript
 import { CodatSyncCommerce } from "@codat/sync-for-commerce";
 
-async function run() {
-    const sdk = new CodatSyncCommerce({
-        retryConfig: {
-            strategy: "backoff",
-            backoff: {
-                initialInterval: 1,
-                maxInterval: 50,
-                exponent: 1.1,
-                maxElapsedTime: 100,
-            },
-            retryConnectionErrors: false,
+const codatSyncCommerce = new CodatSyncCommerce({
+    retryConfig: {
+        strategy: "backoff",
+        backoff: {
+            initialInterval: 1,
+            maxInterval: 50,
+            exponent: 1.1,
+            maxElapsedTime: 100,
         },
-        security: {
-            authHeader: "Basic BASE_64_ENCODED(API_KEY)",
-        },
-    });
+        retryConnectionErrors: false,
+    },
+    security: {
+        authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+    },
+});
 
-    const result = await sdk.syncFlowSettings.getConfigTextSyncFlow();
+async function run() {
+    const result = await codatSyncCommerce.syncFlowSettings.getConfigTextSyncFlow();
 
     // Handle the result
     console.log(result);
