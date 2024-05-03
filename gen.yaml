@@ -12,6 +12,7 @@ generation:
   telemetryEnabled: true
 csharp:
   version: 2.2.0
+  additionalDependencies: []
   author: Codat
   clientServerStatusCodesAsErrors: true
   company: ""
@@ -35,7 +36,7 @@ csharp:
   responseFormat: envelope-http
   sdkClassName: Codat.Sync.Commerce
 docs:
-  version: 0.6.7
+  version: 0.6.8
   docsLanguages:
     - go
   imports:
@@ -98,6 +99,7 @@ typescript:
     dependencies: {}
     devDependencies: {}
     peerDependencies: {}
+  additionalPackageJSON: {}
   author: Codat
   clientServerStatusCodesAsErrors: true
   description: Push merchants' data from your ecommerce or point-of-sale (POS) platform into your merchants' accounting platform.
