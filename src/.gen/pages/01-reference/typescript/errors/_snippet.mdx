@@ -10,16 +10,16 @@ Validation errors can also occur when either method arguments or data returned f
 import { CodatSyncCommerce } from "@codat/sync-for-commerce";
 import * as errors from "@codat/sync-for-commerce/models/errors";
 
-async function run() {
-    const sdk = new CodatSyncCommerce({
-        security: {
-            authHeader: "Basic BASE_64_ENCODED(API_KEY)",
-        },
-    });
+const codatSyncCommerce = new CodatSyncCommerce({
+    security: {
+        authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+    },
+});
 
+async function run() {
     let result;
     try {
-        result = await sdk.syncFlowSettings.getConfigTextSyncFlow();
+        result = await codatSyncCommerce.syncFlowSettings.getConfigTextSyncFlow();
     } catch (err) {
         switch (true) {
             case err instanceof errors.SDKValidationError: {
