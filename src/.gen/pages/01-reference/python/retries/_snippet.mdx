@@ -30,7 +30,7 @@ from codatsynccommerce.models import components
 from codatsynccommerce.utils import BackoffStrategy, RetryConfig
 
 s = codatsynccommerce.CodatSyncCommerce(
-    retry_config=RetryConfig('backoff', BackoffStrategy(1, 50, 1.1, 100), False)
+    retry_config=RetryConfig('backoff', BackoffStrategy(1, 50, 1.1, 100), False),
     security=components.Security(
         auth_header="Basic BASE_64_ENCODED(API_KEY)",
     ),
