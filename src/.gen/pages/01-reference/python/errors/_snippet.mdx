@@ -15,10 +15,10 @@ s = codatsynccommerce.CodatSyncCommerce(
     ),
 )
 
-
 res = None
 try:
     res = s.sync_flow_settings.get_config_text_sync_flow()
+
 except errors.ErrorMessage as e:
     # handle exception
     raise(e)
