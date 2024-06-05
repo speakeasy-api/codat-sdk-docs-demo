@@ -4,15 +4,15 @@ management:
   docChecksum: 3456c4c108fa258a779d2d71ca4bcd68
   docVersion: "1.1"
   speakeasyVersion: internal
-  generationVersion: 2.304.1
-  releaseVersion: 0.6.7
-  configChecksum: 88dffd77f035190f5ef28dc0b9f7f532
+  generationVersion: 2.338.12
+  releaseVersion: 0.6.8
+  configChecksum: 6add8cc1200f041e883ca864a1d41b92
   installationURL: codat-sync-for-commerce
   published: true
 features:
   docs:
     constsAndDefaults: 0.1.1
-    core: 1.26.3
+    core: 1.26.5
     deprecations: 0.1.0
     examples: 0.1.1
     flattening: 0.1.0
