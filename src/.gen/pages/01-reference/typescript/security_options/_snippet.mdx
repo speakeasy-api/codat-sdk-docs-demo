@@ -9,14 +9,14 @@ You can set the security parameters through the `security` optional parameter wh
 ```typescript
 import { CodatSyncCommerce } from "@codat/sync-for-commerce";
 
-async function run() {
-    const sdk = new CodatSyncCommerce({
-        security: {
-            authHeader: "Basic BASE_64_ENCODED(API_KEY)",
-        },
-    });
+const codatSyncCommerce = new CodatSyncCommerce({
+    security: {
+        authHeader: "Basic BASE_64_ENCODED(API_KEY)",
+    },
+});
 
-    const result = await sdk.syncFlowSettings.getConfigTextSyncFlow();
+async function run() {
+    const result = await codatSyncCommerce.syncFlowSettings.getConfigTextSyncFlow();
 
     // Handle the result
     console.log(result);
